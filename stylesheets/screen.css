@@ -2,7 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,185 +20,141 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-/* line 22, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
-  line-height: 1;
-}
+  line-height: 1; }
 
-/* line 24, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 26, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-/* line 28, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
-/* line 30, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
 
-/* line 32, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
-  border: none;
-}
+  border: none; }
 
-/* line 116, ../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
+  display: block; }
 
 /*------ typography ------*/
-/* line 4, ../sass/components/typography.scss */
 body, html {
   font-size: 100%;
   font-family: Helvetica, sans-serif;
   line-height: initial;
-  color: #080808;
-}
+  color: #080808; }
 
-/* line 11, ../sass/components/typography.scss */
 body {
   background-color: #fbfbfb;
-  color: #030303;
-}
+  color: #030303; }
 
-/* line 17, ../sass/components/typography.scss */
 b,
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-/* line 26, ../sass/components/typography.scss */
 em,
 address,
 cite,
 dfn,
 i,
 var {
-  font-style: italic;
-}
+  font-style: italic; }
 
-/* line 33, ../sass/components/typography.scss */
 code,
 pre,
 samp,
 kbd {
   font-family: Courier, monospace;
-  line-height: normal;
-}
+  line-height: normal; }
 
-/* line 38, ../sass/components/typography.scss */
 h1 {
-  font-size: 3.375em;
-}
+  font-size: 3.375em; }
 
-/* line 42, ../sass/components/typography.scss */
 h2 {
-  font-size: 3em;
-}
+  font-size: 3em; }
 
-/* line 46, ../sass/components/typography.scss */
 h3 {
-  font-size: 2.25em;
-}
+  font-size: 2.25em; }
 
-/* line 50, ../sass/components/typography.scss */
 h4 {
-  font-size: 2em;
-}
+  font-size: 2em; }
 
-/* line 54, ../sass/components/typography.scss */
 h5 {
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
-/* line 58, ../sass/components/typography.scss */
 h6 {
-  font-size: 1.333em;
-}
+  font-size: 1.333em; }
 
 /*------ extra type sizes - part of modular type scale------*/
-/* line 63, ../sass/components/typography.scss */
 .huge {
-  font-size: 4.5em;
-}
+  font-size: 4.5em; }
 
-/* line 67, ../sass/components/typography.scss */
 .default-font {
-  font-size: 1em;
-}
+  font-size: 1em; }
 
-/* line 71, ../sass/components/typography.scss */
 .larger {
-  font-size: 0.899em;
-}
+  font-size: 0.899em; }
 
-/* line 75, ../sass/components/typography.scss */
 .large {
-  font-size: 0.667em;
-}
+  font-size: 0.667em; }
 
-/* line 79, ../sass/components/typography.scss */
 .small {
-  font-size: 0.593em;
-}
+  font-size: 0.593em; }
 
-/* line 83, ../sass/components/typography.scss */
 .smallest {
-  font-size: 0.444em;
-}
+  font-size: 0.444em; }
 
-/* line 1, ../sass/components/general.scss */
 html, body {
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
-}
+  font-family: 'Open Sans', sans-serif; }
 
-/* line 1, ../sass/components/intro.scss */
+nav {
+  overflow-y: scroll; }
+  nav ul {
+    width: 90%;
+    margin: 0 auto; }
+  nav li {
+    width: 30%;
+    float: left;
+    margin-right: 5%; }
+    nav li a {
+      line-height: 3em;
+      color: #f4f4f4; }
+  nav li:nth-child(3n+3) {
+    margin-right: 0; }
+
 #intro {
-  display: none;
-}
+  display: none; }
 
-/* line 1, ../sass/components/letter-space.scss */
 #letter-space {
   width: 70%;
   height: 100%;
   background: #f4f4f4;
-  float: left;
-}
+  float: left; }
 
-/* line 1, ../sass/components/nav.scss */
 nav {
   width: 30%;
   height: 100%;
   background: #282828;
-  float: right;
-}
+  float: right; }
 
-/* line 8, ../sass/components/nav.scss */
 nav h1 {
-  color: #ff6950;
+  color: #00ccff;
   text-align: center;
   padding: .5em;
-}
+  font-weight: 700; }
