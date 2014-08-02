@@ -1,0 +1,100 @@
+/*------ typography ------*/
+/* line 4, ../../sass/components/typography.scss */
+body, html {
+  font-size: 100%;
+  font-family: Helvetica, sans-serif;
+  line-height: initial;
+  color: #080808;
+}
+
+/* line 11, ../../sass/components/typography.scss */
+body {
+  background-color: #fbfbfb;
+  color: #030303;
+}
+
+/* line 17, ../../sass/components/typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 26, ../../sass/components/typography.scss */
+em,
+address,
+cite,
+dfn,
+i,
+var {
+  font-style: italic;
+}
+
+/* line 33, ../../sass/components/typography.scss */
+code,
+pre,
+samp,
+kbd {
+  font-family: Courier, monospace;
+  line-height: normal;
+}
+
+/* line 38, ../../sass/components/typography.scss */
+h1 {
+  font-size: 3.375em;
+}
+
+/* line 42, ../../sass/components/typography.scss */
+h2 {
+  font-size: 3em;
+}
+
+/* line 46, ../../sass/components/typography.scss */
+h3 {
+  font-size: 2.25em;
+}
+
+/* line 50, ../../sass/components/typography.scss */
+h4 {
+  font-size: 2em;
+}
+
+/* line 54, ../../sass/components/typography.scss */
+h5 {
+  font-size: 1.5em;
+}
+
+/* line 58, ../../sass/components/typography.scss */
+h6 {
+  font-size: 1.333em;
+}
+
+/*------ extra type sizes - part of modular type scale------*/
+/* line 63, ../../sass/components/typography.scss */
+.huge {
+  font-size: 4.5em;
+}
+
+/* line 67, ../../sass/components/typography.scss */
+.default-font {
+  font-size: 1em;
+}
+
+/* line 71, ../../sass/components/typography.scss */
+.larger {
+  font-size: 0.899em;
+}
+
+/* line 75, ../../sass/components/typography.scss */
+.large {
+  font-size: 0.667em;
+}
+
+/* line 79, ../../sass/components/typography.scss */
+.small {
+  font-size: 0.593em;
+}
+
+/* line 83, ../../sass/components/typography.scss */
+.smallest {
+  font-size: 0.444em;
+}
