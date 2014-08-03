@@ -24,7 +24,7 @@
         <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
         <![endif]-->
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700%7CCLibre+Baskerville' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -33,22 +33,28 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <section id="intro">
+        <a href="javascript:showletter('letter1');" class="letters" id="intro">
+            <div id="logo"></div>
             <h1></h1>
-        </section>
+        </a>
 
         <section id="letter-space">
             <h1></h1>
+            <div class="letters" id="letter1">
+            </div>
+            <div class="letters" id="letter2">
+            </div>
+            <div class="letters" id="letter3">
+            </div>
         </section>
-
         <nav>
-            <h1>Menu</h1>
+            <h1>Type Anatomy</h1>
             <ul>
-                <li><a>Aperture</a>
+                <li><a href="javascript:showletter('letter1');">Aperture</a>
                 </li>
-                <li><a>Apex</a>
+                <li><a href="javascript:showletter('letter2');">Apex</a>
                 </li>
-                <li><a>Arc</a>
+                <li><a href="javascript:showletter('letter3');">Arc</a>
                 </li>
                 <li><a>Arm</a>
                 </li>
@@ -129,14 +135,6 @@
                 <li><a>Vertex</a>
                 </li>
             </ul>
-            <script>
-            $.each(
-                a ,
-                function(i,v) {
-                    $("#target_id").append("<li>" + v + "</li>") ;
-                }
-            ) ;
-            </script>
         </nav>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -144,14 +142,15 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-46191310-4', 'auto');
+          ga('send', 'pageview');
+
         </script>
     </body>
 </html>
