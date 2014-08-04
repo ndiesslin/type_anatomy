@@ -10,7 +10,7 @@ nav h1 {
 	font-family: 'Libre Baskerville', serif;
 	font-size: 2.25em;
 	text-align: center;
-	padding: 1em;
+	padding: .5em;
 	font-weight: 700;
 	border-bottom: 1px solid $white;
 }
@@ -18,4 +18,25 @@ nav h1 {
 ul li a {
 	text-decoration: none;
 	border-bottom: 1px $blue solid;
+}
+
+nav {
+	overflow-y: scroll;
+	ul {
+		padding: 2em 0;
+		width: 90%;
+		margin: 0 auto;
+	}
+	li {
+		width: 30%;
+		float: left;
+		margin-right: 5%;
+		a{
+			line-height: 3em;
+			color: $white;
+		}
+	}
+	li:nth-child(3n+3) {
+		margin-right: 0;
+	}
 }

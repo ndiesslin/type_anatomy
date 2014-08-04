@@ -5,23 +5,3 @@ html, body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
 }
-
-nav {
-	overflow-y: scroll;
-	ul {
-		width: 90%;
-		margin: 0 auto;
-	}
-	li {
-		width: 30%;
-		float: left;
-		margin-right: 5%;
-		a{
-			line-height: 3em;
-			color: $white;
-		}
-	}
-	li:nth-child(3n+3) {
-		margin-right: 0;
-	}
-}

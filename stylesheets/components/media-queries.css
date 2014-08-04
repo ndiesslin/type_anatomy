@@ -1,11 +1,9 @@
 /*
-Syntax error: Undefined variable: "$black".
-        on line 4 of /home/nicholascolediesslin/type_anatomy/sass/components/nav.scss
-
-1: /home/nicholascolediesslin/type_anatomy/sass/components/nav.scss
+Syntax error: Undefined variable: "$white".
+        on line 35 of /home/nicholascolediesslin/type_anatomy/sass/components/media-queries.scss
 
 Backtrace:
-/home/nicholascolediesslin/type_anatomy/sass/components/nav.scss:4
+/home/nicholascolediesslin/type_anatomy/sass/components/media-queries.scss:35
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -19,6 +17,36 @@ Backtrace:
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:362:in `visit_media'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -47,15 +75,14 @@ Backtrace:
 /var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
 /var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
 /var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:147:in `recompile'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:95:in `block (4 levels) in perform'
 /var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
 /var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
 /var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:39:in `delete'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:32:in `block in deleted'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:31:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:31:in `deleted'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:16:in `refresh'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
 /var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/inotify.rb:12:in `block in add_handler'
 /var/lib/gems/1.9.1/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:205:in `call'
 /var/lib/gems/1.9.1/gems/rb-inotify-0.9.3/lib/rb-inotify/notifier.rb:205:in `block in watch'
@@ -83,4 +110,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$black\".\A         on line 4 of /home/nicholascolediesslin/type_anatomy/sass/components/nav.scss\A \A 1: /home/nicholascolediesslin/type_anatomy/sass/components/nav.scss"; }
+  content: "Syntax error: Undefined variable: \"$white\".\A         on line 35 of /home/nicholascolediesslin/type_anatomy/sass/components/media-queries.scss"; }
