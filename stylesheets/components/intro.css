@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$white".
-        on line 23 of /home/nicholascolediesslin/type_anatomy/sass/components/intro.scss
+        on line 24 of /home/nicholascolediesslin/type_anatomy/sass/components/intro.scss
 
 Backtrace:
-/home/nicholascolediesslin/type_anatomy/sass/components/intro.scss:23
+/home/nicholascolediesslin/type_anatomy/sass/components/intro.scss:24
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -80,4 +80,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$white\".\A         on line 23 of /home/nicholascolediesslin/type_anatomy/sass/components/intro.scss"; }
+  content: "Syntax error: Undefined variable: \"$white\".\A         on line 24 of /home/nicholascolediesslin/type_anatomy/sass/components/intro.scss"; }
