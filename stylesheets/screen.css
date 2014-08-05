@@ -154,8 +154,10 @@ hr {
 #letter-space {
   width: 70%;
   height: 100%;
-  background: #f4f4f4;
-  float: left; }
+  float: left;
+  background: url(../img/grid.svg) repeat-x center;
+  background-size: contain;
+  background-color: #f4f4f4; }
   #letter-space .letters {
     display: none;
     width: 100%;
@@ -166,7 +168,7 @@ hr {
   background: url(../img/letters/letter1.svg) no-repeat center center; }
 
 #letter2 {
-  background-color: purple; }
+  background: url(../img/letters/letter2.svg) no-repeat center center; }
 
 #letter3 {
   background-color: yellow; }
@@ -214,6 +216,7 @@ Terminal
 Vertex
 */
 nav {
+  right: 0;
   width: 30%;
   height: 100%;
   background: #282828;
@@ -265,10 +268,12 @@ nav {
 @media only screen and (max-width: 480px) {
   /* 480 =================================================== */
   #letter-space {
+    bottom: 0;
     width: 100%;
     height: 60%; }
 
   nav {
+    top: 0;
     width: 100%;
     height: 40%; } }
 @media only screen and (min-width: 480px) {

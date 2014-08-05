@@ -1,8 +1,10 @@
 #letter-space {
     width: 70%;
     height: 100%;
-    background: $white;
-    float: left;   
+    float: left;
+    background: url(../img/grid.svg) repeat-x center; 
+    background-size: contain;
+    background-color: $white;  
     .letters {
 		display: none;
 		width: 100%;
@@ -16,7 +18,7 @@
 }
 
 #letter2 {
-	background-color: purple;
+	background: url(../img/letters/letter2.svg) no-repeat center center;
 }
 
 #letter3 {
