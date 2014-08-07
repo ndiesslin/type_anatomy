@@ -45,15 +45,20 @@
         <section id="letter-space">
             <h1></h1>
             <?php 
-	            for($i=1;$i<47;$i++) {?>
-	            <div class="letters" id="letter<?php echo $i; ?>">
-	            </div>
+	        for($i=1;$i<47;$i++) {?>
+	        <div class="letters" id="letter<?php echo $i; ?>"></div>
             <?php }?>
         </section>
         <nav>
             <h1>Type Anatomy</h1>
             <hr>
             <ul>
+            <?php 
+            $tacos = array("thispart", "thatpart");
+            foreach ($tacos as $taco) : ?>
+                <li class="nav"><a href="#<?php echo $taco;?>"><?php echo $taco; ?></a></li>
+
+            <?php endforeach; ?>
                 <li><a href="javascript:showletter('letter1');">Aperture</a>
                 </li>
                 <li><a href="javascript:showletter('letter2');">Apex</a>
