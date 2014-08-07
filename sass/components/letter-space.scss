@@ -1,3 +1,5 @@
+@import "_variables";
+
 #letter-space {
     width: 70%;
     height: 100%;
@@ -13,40 +15,47 @@
 	}
 }
 
+$imagePath: "url(../img/letters/letter-";
+$end: ".svg)";
+@for $i from 1 through 46 {
+  #letter#{$i} { background: #{$imagePath}#{$i}#{$end} no-repeat center center; }
+}
+
+
 #letter1 {
-	background: url(../img/letters/letter-01.svg) no-repeat center center;
+	background: url(../img/letters/letter-1.svg) no-repeat center center;
 }
 
 #letter2 {
-	background: url(../img/letters/letter-02.svg) no-repeat center center;
+	background: url(../img/letters/letter-2.svg) no-repeat center center;
 }
 
 #letter3 {
-	background: url(../img/letters/letter-03.svg) no-repeat center center;
+	background: url(../img/letters/letter-3.svg) no-repeat center center;
 }
 
 #letter4 {
-	background: url(../img/letters/letter-04.svg) no-repeat center center;
+	background: url(../img/letters/letter-4.svg) no-repeat center center;
 }
 
 #letter5 {
-	background: url(../img/letters/letter-05.svg) no-repeat center center;
+	background: url(../img/letters/letter-5.svg) no-repeat center center;
 }
 
 #letter6 {
-	background: url(../img/letters/letter-06.svg) no-repeat center center;
+	background: url(../img/letters/letter-6.svg) no-repeat center center;
 }
 
 #letter7 {
-	background: url(../img/letters/letter-07.svg) no-repeat center center;
+	background: url(../img/letters/letter-7.svg) no-repeat center center;
 }
 
 #letter8 {
-	background: url(../img/letters/letter-08.svg) no-repeat center center;
+	background: url(../img/letters/letter-8.svg) no-repeat center center;
 }
 
 #letter9 {
-	background: url(../img/letters/letter-09.svg) no-repeat center center;
+	background: url(../img/letters/letter-9.svg) no-repeat center center;
 }
 
 #letter10 {

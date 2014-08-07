@@ -42,42 +42,15 @@
             <h1></h1>
             <div id="continue-here"><em>Click anywhere to continue to site ...</em></div>
         </a>
-
         <section id="letter-space">
             <h1></h1>
-
             <?php 
-            for($i=1;$i<47;$i++) {?>
-            <div class="letters" id="letter<?php echo $i; ?>">
-            </div>
+	            for($i=1;$i<47;$i++) {?>
+	            <div class="letters" id="letter<?php echo $i; ?>">
+	            </div>
             <?php }?>
-
-            <div class="letters" id="letter1">
-            </div>
-            <div class="letters" id="letter2">
-            </div>
-            <div class="letters" id="letter3">
-            </div>
         </section>
         <nav>
-            <!--
-            <button onclick="myFunction()">Try it</button>
-
-            <p id="demo"></p>
-            -->
-            <script>
-            /*
-            function myFunction() {
-                var text = "";
-                var i;
-                for (i = 0; i < 5; i++) {
-                    text += "<a>" + "The number is " + i + "</a>" + "<br>";
-                }
-                document.getElementById("demo").innerHTML = text;
-            }
-            */
-            </script> 
-
             <h1>Type Anatomy</h1>
             <hr>
             <ul>
