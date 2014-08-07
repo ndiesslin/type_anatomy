@@ -45,18 +45,13 @@
 
         <section id="letter-space">
             <h1></h1>
-            <?php
-            /*
-                $somearray = array(
-                            'Aperture', 'other', 'thing'
-                    );
-                $i=1;
-                foreach ($somearray as $k=>$v){
-                    echo '<li><a id="div'.$i.'">'. $v .'<a></li>';
-                    $i++;
-                }
-                */
-            ?>
+
+            <?php 
+            for($i=1;$i<47;$i++) {?>
+            <div class="letters" id="letter<?php echo $i; ?>">
+            </div>
+            <?php }?>
+
             <div class="letters" id="letter1">
             </div>
             <div class="letters" id="letter2">
@@ -86,27 +81,6 @@
             <h1>Type Anatomy</h1>
             <hr>
             <ul>
-
-                <?php 
-                /*
-                $x=1;
-                $terms = array("foo", "bar", "hello", "world");
-                while($x<=5) {
-                   echo "<li><a>$terms $x </a></li>";
-                   $x++;
-                } 
-                */
-
-                $somearray = array(
-                        'Aperture', 'other', 'thing'
-                );
-                $i=1;
-                foreach ($somearray as $k=>$v){
-                    echo '<li><a id="div'.$i.'">'. $v .'<a></li>';
-                    $i++;
-                }
-                ?>
-
                 <li><a href="javascript:showletter('letter1');">Aperture</a>
                 </li>
                 <li><a href="javascript:showletter('letter2');">Apex</a>
