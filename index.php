@@ -54,7 +54,7 @@
             <hr>
             <ul>
             <?php 
-            $tacos = array("thispart", "thatpart");
+            $tacos = array("Arm", "Ascender", "Ascender Line", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Bowl", "Bracket", "Cap Height","Counter(open)", "Counter(closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex");
             foreach ($tacos as $taco) : ?>
                 <li class="nav"><a href="#<?php echo $taco;?>"><?php echo $taco; ?></a></li>
 
