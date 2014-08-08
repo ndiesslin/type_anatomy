@@ -53,96 +53,12 @@
             <h1>Type Anatomy</h1>
             <hr>
             <ul>
-            <?php 
-            $tacos = array("Arm", "Ascender", "Ascender Line", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Bowl", "Bracket", "Cap Height","Counter(open)", "Counter(closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex");
-            foreach ($tacos as $taco) : ?>
-                <li class="nav"><a href="#<?php echo $taco;?>"><?php echo $taco; ?></a></li>
-
-            <?php endforeach; ?>
-                <li><a href="javascript:showletter('letter1');">Aperture</a>
-                </li>
-                <li><a href="javascript:showletter('letter2');">Apex</a>
-                </li>
-                <li><a href="javascript:showletter('letter3');">Arc</a>
-                </li>
-                <li><a href="javascript:showletter('letter4');">Arm</a>
-                </li>
-                <li><a href="javascript:showletter('letter5');">Ascender</a>
-                </li>
-                <li><a href="javascript:showletter('letter6');">Ascender Line</a>
-                </li>
-                <li><a href="javascript:showletter('letter7');">Ascent Line</a>
-                </li>
-                <li><a href="javascript:showletter('letter8');">Axis</a>
-                </li>
-                <li><a href="javascript:showletter('letter9');">Base Line</a>
-                </li>
-                <li><a href="javascript:showletter('letter10');">Beak</a>
-                </li>
-                <li><a href="javascript:showletter('letter11');">Bilateral Serif</a>
-                </li>
-                <li><a href="javascript:showletter('letter12');">Bracket</a>
-                </li>
-                <li><a href="javascript:showletter('letter13');">Cap Height</a>
-                </li>
-                <li><a href="javascript:showletter('letter14');">Counter(open)</a>
-                </li>
-                <li><a href="javascript:showletter('letter15');">Counter(closed)</a>
-                </li>
-                <li><a href="javascript:showletter('letter16');">Cross Stroke</a>
-                </li>
-                <li><a href="javascript:showletter('letter17');">Crotch</a>
-                </li>
-                <li><a href="javascript:showletter('letter18');">Descender</a>
-                </li>
-                <li><a href="javascript:showletter('letter19');">Decent Line</a>
-                </li>
-                <li><a href="javascript:showletter('letter20');">Diacritic</a>
-                </li>
-                <li><a href="javascript:showletter('letter21');">Ear</a>
-                </li>
-                <li><a href="javascript:showletter('letter22');">Finial</a>
-                </li>
-                <li><a href="javascript:showletter('letter23');">Foot</a>
-                </li>
-                <li><a href="javascript:showletter('letter24');">Hairline</a>
-                </li>
-                <li><a href="javascript:showletter('letter25');">Head Serif</a>
-                </li>
-                <li><a href="javascript:showletter('letter26');">Joint</a>
-                </li>
-                <li><a href="javascript:showletter('letter27');">Head Serif</a>
-                </li>
-                <li><a href="javascript:showletter('letter28');">Leg</a>
-                </li>
-                <li><a href="javascript:showletter('letter29');">Ligature</a>
-                </li>
-                <li><a href="javascript:showletter('letter30');">Link/Neck</a>
-                </li>
-                <li><a href="javascript:showletter('letter31');">Loop</a>
-                </li>
-                <li><a href="javascript:showletter('letter32');">Overhang</a>
-                </li>
-                <li><a href="javascript:showletter('letter33');">Serif</a>
-                </li>
-                <li><a href="javascript:showletter('letter34');">Shoulder</a>
-                </li>
-                <li><a href="javascript:showletter('letter35');">Spine</a>
-                </li>
-                <li><a href="javascript:showletter('letter36');">Spur</a>
-                </li>
-                <li><a href="javascript:showletter('letter37');">Stem</a>
-                </li>
-                <li><a href="javascript:showletter('letter38');">Stress</a>
-                </li>
-                <li><a href="javascript:showletter('letter39');">Tail</a>
-                </li>
-                <li><a href="javascript:showletter('letter40');">Tittle</a>
-                </li>
-                <li><a href="javascript:showletter('letter41');">Terminal</a>
-                </li>
-                <li><a href="javascript:showletter('letter42');">Vertex</a>
-                </li>
+	            <?php 
+	            $letters = array("Arm", "Ascender", "Ascender Line", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Bowl", "Bracket", "Cap Height","Counter(open)", "Counter(closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex");
+		        $num = 1;
+	            foreach ($letters as $letter) : ?>
+	                <li><a href="javascript:showletter('letter<?php echo $num++;?>');"><?php echo $letter; ?></a></li>
+	            <?php endforeach;?>
             </ul>
         </nav>
 
