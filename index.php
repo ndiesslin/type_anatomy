@@ -19,9 +19,6 @@
         <link rel="shortcut icon" sizes="152x152" href="152.png">
         <link rel="apple-touch-icon" sizes="152x152" href="152.png">
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="152.png">
-        <!--
-        <link rel="stylesheet" href="css/main.css">
-        -->
         <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
         <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
         <!--[if IE]
