@@ -51,7 +51,7 @@
             <hr>
             <ul>
 	            <?php 
-	            $letters = array("Arm", "Ascender", "Ascender Line", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Bowl", "Bracket", "Cap Height","Counter(open)", "Counter(closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex");
+	            $letters = array("Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body width", "Bowl", "Bracket", "Cap Height", "Character width", "Counter(open)", "Counter(closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex");
 		        $num = 1;
 	            foreach ($letters as $letter) : ?>
 	                <li><a href="javascript:showletter('letter<?php echo $num++;?>');"><?php echo $letter; ?></a></li>
