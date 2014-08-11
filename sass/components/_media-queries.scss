@@ -13,6 +13,17 @@
         height: 40%;
         ul{
             width: 90%;
+            padding: 1em 0;
+        }
+        li {
+            width: 50%;
+            float: left;
+            margin-right: 0;
+            a{
+                font-size: 1em;
+                line-height: 3em;
+                color: $white;
+            }
         }
     }
 }
@@ -30,6 +41,7 @@
         height: 40%;
         ul{
             width: 90%;
+            padding: 1em 0;
         }
     }
 }
@@ -47,6 +59,7 @@
         height: 40%;
         ul {
             width: 90%;
+            padding: 2em 0;
         }
     }
 }
@@ -62,8 +75,12 @@
     right: 0;
     width: 35%;
     height: 100%;
+        h1 {
+            font-size: 1.5em;
+        }
         ul {
             width: 225px;
+            font-size: 0.667em;
         }
         li {
             width: 50%;
@@ -83,9 +100,12 @@
 @media only screen and (min-width: 992px) {
   /* 992 =================================================== */
     nav {
+        h1 {
+            font-size: 2.25em;
+        }
         ul {
-            width: 250px;
-            font-size: 0.593em;
+            width: 285px;
+            font-size: 0.667em;
         }
         li {
             width: 30%;
@@ -106,7 +126,7 @@
 @media only screen and (min-width: 1382px) {
   /* 1382 =================================================== */
     nav ul {
-        width: 320px;
-        font-size: 0.667em;
+        width: 80%;
+        font-size: 0.889em;
     }
 }
