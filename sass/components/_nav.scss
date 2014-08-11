@@ -32,7 +32,7 @@ nav {
 				@include transition-timing-function(ease-in);
 			}
 			a:hover {
-				opacity: .75;
+				opacity: .85;
 			}
 			a:active {
 				border-bottom: 1px $orange solid;

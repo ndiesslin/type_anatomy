@@ -381,7 +381,7 @@ nav {
       -o-transition-timing-function: ease-in;
       transition-timing-function: ease-in; }
     nav ul li a:hover {
-      opacity: .75; }
+      opacity: .85; }
     nav ul li a:active {
       border-bottom: 1px #ff6950 solid; }
   nav li {
