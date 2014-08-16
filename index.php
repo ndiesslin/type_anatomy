@@ -9,11 +9,9 @@
         <title>Type Anatomy</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
         <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
         <link rel="icon" href="img/favicon.png" type="image/x-icon">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
         <meta name="mobile-web-app-capable" content="yes">
         <link rel="shortcut icon" sizes="196x196" href="img/196.png">
         <link rel="shortcut icon" sizes="152x152" href="img/152.png">
