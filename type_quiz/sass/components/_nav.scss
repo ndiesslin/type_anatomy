@@ -1,0 +1,55 @@
+@import "_variables";
+
+nav {
+    right: 0;
+    width: 35%;
+    height: 100%;
+    background: $black;
+    float: right;
+    position: fixed;
+}
+
+nav h1 {
+	color: $white;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 2.25em;
+	text-align: center;
+	padding: .5em;
+	margin: .5em 0;
+}
+
+nav {
+	overflow-y: scroll;
+	ul {
+		padding: 2em 0;
+		width: 90%;
+		margin: 0 auto;
+		li {
+			a {
+				text-decoration: none;
+				border-bottom: 1px $blue solid;
+				@include transition-property(all);
+				@include transition-duration(.1s);
+				@include transition-timing-function(ease-in);
+			}
+			a:hover {
+				opacity: .85;
+			}
+			a:active {
+				border-bottom: 1px $orange solid;
+			}
+		}
+	}
+	li {
+		width: 30%;
+		float: left;
+		margin-right: 5%;
+		a{
+			line-height: 3em;
+			color: $white;
+		}
+	}
+	li:nth-child(3n+3) {
+		margin-right: 0;
+	}
+}

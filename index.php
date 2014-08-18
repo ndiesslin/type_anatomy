@@ -22,16 +22,13 @@
         <!--[if IE]
         <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
         <![endif]-->
-
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700%7CCLibre+Baskerville' rel='stylesheet' type='text/css'>
-
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
         <a href="javascript:showletter('letter1');" class="letters" id="intro">
             <div id="logo"></div>
             <h1></h1>
