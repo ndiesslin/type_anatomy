@@ -181,7 +181,7 @@
 		        </li>
 		    </ul>
 		</div>
-	    <a class="flex-next" href="">Next</a>
+	    <div class="flex1-next flex2-next" href="">Next</div>
         </nav>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

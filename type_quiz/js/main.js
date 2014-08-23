@@ -1,25 +1,36 @@
-$(window).load(function() {
-	$('.flexslider').flexslider({
-		animation: "slide"
-	});
-	$('.flexslider').flexslider("pause");
-	var exampleSlider = $('.flexslider').data('flexslider');
-	exampleSlider.flexAnimate(exampleSlider.getTarget("next"));
-	$('.flex-next').click(function(event){
-		event.preventDefault();
-		exampleSlider.flexAnimate(exampleSlider.getTarget("next"));
-	});
+jQuery(document).ready(function($) {
 
 	$('.flexslider2').flexslider({
 		animation: "slide",
 		controlNav: false,
-		directionNav: false,
+		directionNav: false
 	});
+
 	$('.flexslider2').flexslider("pause");
-	var flexSlider2 = $('.flexslider2').data('flexslider2');
-	flexSlider2.flexAnimate(flexSlider2.getTarget("next"));
-	$('.flex-next').click(function(event){
-		event.preventDefault();
-		flexSlider2.flexAnimate(flexSlider2.getTarget("next"));
+
+
+	$('.flexslider').flexslider({
+		animation: "slide",
+		sync: ".flexslider2"
+	});
+
+	$('.flexslider').flexslider("pause");
+
+	var slider1 = $('.flexslider').data('flexslider');
+	slider1.flexAnimate(slider1.getTarget("next"));
+
+	var clickCount = 0;
+
+	$('.flex1-next').click(function(event){
+		if (clickCount <= 7){
+			event.preventDefault();
+			slider1.flexAnimate(slider1.getTarget("next"));
+			clickCount++;
+		} else{
+			event.preventDefault();
+			slider1.flexAnimate(slider1.getTarget("next"));
+			clickCount++;
+			$(".flex1-next").css("display", "none");
+		}
 	});
 });
