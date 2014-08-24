@@ -337,6 +337,10 @@ nav {
   background: #282828;
   float: right;
   position: fixed; }
+  nav #flexcontainer2 {
+    width: 80%;
+    margin: 0 auto;
+    color: #f4f4f4; }
 
 nav h1 {
   color: #f4f4f4;
@@ -374,7 +378,7 @@ nav {
   nav li {
     width: 30%;
     float: left;
-    margin-right: 5%; }
+    margin-right: 0; }
     nav li a {
       line-height: 3em;
       color: #f4f4f4; }
@@ -486,7 +490,7 @@ nav {
   nav li {
     width: 30%;
     float: left;
-    margin-right: 5%; }
+    margin-right: 0; }
     nav li a {
       line-height: 3em;
       color: #f4f4f4; }

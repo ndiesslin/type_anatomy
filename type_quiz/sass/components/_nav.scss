@@ -7,6 +7,11 @@ nav {
     background: $black;
     float: right;
     position: fixed;
+    #flexcontainer2 {
+    	width: 80%;
+    	margin: 0 auto;
+    	color: $white;
+    }
 }
 
 nav h1 {
@@ -43,7 +48,7 @@ nav {
 	li {
 		width: 30%;
 		float: left;
-		margin-right: 5%;
+		margin-right: 0;
 		a{
 			line-height: 3em;
 			color: $white;
