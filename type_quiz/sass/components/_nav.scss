@@ -29,6 +29,7 @@ nav {
 		padding: 2em 0;
 		width: 90%;
 		margin: 0 auto;
+		text-align: center;
 		li {
 			a {
 				text-decoration: none;
@@ -56,5 +57,28 @@ nav {
 	}
 	li:nth-child(3n+3) {
 		margin-right: 0;
+	}
+	#next-button {
+		position: absolute;
+		right: 5%;
+		color: $white;
+		border-bottom: 1px $blue solid;
+		cursor: pointer;
+	}
+	input[type=radio] {
+		display: none;
+	}
+	input[type=radio] + label {
+		display: inline-block;
+		color: $white;
+		font-size: 1.25em;
+		line-height: 1.25em;
+		margin: 1em 0;
+		cursor: pointer;
+	}
+	input[type=radio]:checked + label {
+		display: inline-block;
+		color: $white;
+		border-bottom: 1px $blue solid;
 	}
 }

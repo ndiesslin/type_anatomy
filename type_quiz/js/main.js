@@ -3,14 +3,16 @@ jQuery(document).ready(function($) {
 	$('.flexslider2').flexslider({
 		animation: "slide",
 		controlNav: false,
-		directionNav: false
+		directionNav: false,
+		touch: false
 	});
 	$('.flexslider2').flexslider("pause");
 	$('.flexslider2').flexslider(-1);
 
 	$('.flexslider').flexslider({
 		animation: "slide",
-		sync: ".flexslider2"
+		sync: ".flexslider2",
+		touch: false
 	});
 	$('.flexslider').flexslider("pause");
 	$('.flexslider').flexslider(-1);

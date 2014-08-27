@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Type Anatomy Quiz</title>
+        <title>Type Quiz</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -29,8 +29,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-	<div id="progress"></div>
-	<h1 id="title">Type Anatomy Quiz</h1>
+	<h1 id="title">Type Quiz</h1>
 	<div class="flexslider" id="flexcontainer">
 		<ul id="letter-space" class="slides">
 	    		<li class="letters" id="letter1"></li>
@@ -46,26 +45,27 @@
 		</ul>
 	</div>
         <nav>
-            <h1>Type Anatomy</h1>
+            <h1>Type Quiz</h1>
+            <div id="mobile-logo"></div>
             <hr>
         <form action="grade.php" method="post" id="quiz">    
 		    <div class="flexslider2" id="flexcontainer2">
 			    <ul id="quiz-questions" class="slides">
 				    <li>
 			            <div class="radio">
-			                <input type="radio" name="question-1-answers" value="A" />
+			                <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
 			                <label for="question-1-answers-A">A) Computer Styled Sections </label>
 			            </div>
 			            <div class="radio">
-			                <input type="radio" name="question-1-answers" value="B" />
+			                <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
 			                <label for="question-1-answers-B">B) Cascading Style Sheets</label>
 			            </div>
 			            <div class="radio">
-			                <input type="radio" name="question-1-answers" value="C" />
+			                <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
 			                <label for="question-1-answers-C">C) Crazy Solid Shapes</label>
 			            </div>
 			            <div class="radio">
-			                <input type="radio" name="question-1-answers" value="D" />
+			                <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
 			                <label for="question-1-answers-D">D) None of the above</label>
 			            </div>
 			        </li>
@@ -245,7 +245,7 @@
 			    </ul>
 			</div>
 		</form>
-	    <div class="flex1-next flex2-next" href="">Next</div>
+	    <div class="flex1-next flex2-next" id="next-button" href="">Next Question</div>
         </nav>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

@@ -2,6 +2,15 @@
 
 @media only screen and (max-width: 480px) {
   /* 480 =================================================== */
+    hr {
+        display: none;
+    }
+    h1 {
+        display: none;
+    }
+    #mobile-logo {
+        height: 100%;
+    }
     #letter-space {
         bottom: 0;
         width: 100%;
@@ -35,6 +44,12 @@
 
 @media only screen and (min-width: 480px) {
   /* 480 =================================================== */
+    hr {
+        display: none;
+    }
+    h1 {
+        display: none;
+    }
     #letter-space {
         bottom: 0;
         width: 100%;
@@ -81,6 +96,12 @@
 
 @media only screen and (min-width: 768px) {
   /* 768 =================================================== */
+    hr {
+        display: inherit;
+    }
+    h1 {
+        display: block;
+    }
     #letter-space {
     width: 65%;
     height: 100%;
