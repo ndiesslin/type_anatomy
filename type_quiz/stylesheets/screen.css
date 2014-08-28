@@ -414,7 +414,15 @@ nav {
     display: none; }
 
   #mobile-logo {
-    height: 100%; }
+    display: block;
+    position: fixed;
+    top: 10%;
+    width: 10%;
+    height: 20%;
+    left: 0;
+    background: url(../img/mobile_logo.svg) no-repeat center center;
+    background-size: contain;
+    z-index: 9999; }
 
   #letter-space {
     bottom: 0;
@@ -448,6 +456,17 @@ nav {
 
   h1 {
     display: none; }
+
+  #mobile-logo {
+    display: block;
+    position: fixed;
+    top: 10%;
+    width: 10%;
+    height: 20%;
+    left: 0;
+    background: url(../img/mobile_logo.svg) no-repeat center center;
+    background-size: contain;
+    z-index: 9999; }
 
   #letter-space {
     bottom: 0;
@@ -492,6 +511,9 @@ nav {
 
   h1 {
     display: block; }
+
+  #mobile-logo {
+    display: none; }
 
   #letter-space {
     width: 65%;
