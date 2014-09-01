@@ -1,19 +1,27 @@
 @import "_variables";
 
+.flex-control-nav{
+    display: none;
+}
+
+.flex-direction-nav{
+    display: none;
+}
+
 #letter-space {
     width: 65%;
     height: 100%;
     float: left;
-    background: url(../img/back.svg) repeat-x center; 
-    background-size: contain;
-    background-color: $white; 
     position: fixed; 
+    //background: url(../img/back.svg) repeat-x center; 
+    //background-size: contain;
+    //background-color: $white; 
     .letters {
-		display: block;
-		width: 100%;
-		height: 100%;
-		background-size: contain;
-	}
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+    }
 }
 
 #flexcontainer {
@@ -25,11 +33,11 @@
     background-color: $white; 
     position: fixed; 
     .letters {
-		display: block;
-		width: 100%;
-		height: 100%;
-		background-size: contain;
-	}
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+    }
 }
 
 $imagePath: "url(../img/letters/letter-";

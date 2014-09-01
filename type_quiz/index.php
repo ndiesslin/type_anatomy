@@ -72,19 +72,19 @@
 			        
 			        <li>
 			            <div>
-			                <input type="radio" name="question-2-answers" value="A" />
+			                <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
 			                <label for="question-2-answers-A">A) 2001</label>
 			            </div>
 			            <div>
-			                <input type="radio" name="question-2-answers" value="B" />
+			                <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
 			                <label for="question-2-answers-B">B) 1998</label>
 			            </div>
 			            <div>
-			                <input type="radio" name="question-2-answers" value="C" />
+			                <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
 			                <label for="question-2-answers-C">C) 2006</label>
 			            </div>
 			            <div>
-			                <input type="radio" name="question-2-answers" value="D" />
+			                <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
 			                <label for="question-2-answers-D">D) 2003</label>
 			            </div>
 			        </li>
