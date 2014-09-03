@@ -443,19 +443,20 @@ nav {
   /* line 25, ../sass/components/_nav.scss */
   nav ul {
     padding: 2em 0;
+    max-width: 500px;
     width: 90%;
     margin: 0 auto;
     text-align: center; }
-  /* line 31, ../sass/components/_nav.scss */
+  /* line 32, ../sass/components/_nav.scss */
   nav #next-button {
     right: 5%;
     color: #f4f4f4;
     border-bottom: 1px #00ccff solid;
     cursor: pointer; }
-  /* line 37, ../sass/components/_nav.scss */
+  /* line 38, ../sass/components/_nav.scss */
   nav input[type=radio] {
     display: none; }
-  /* line 40, ../sass/components/_nav.scss */
+  /* line 41, ../sass/components/_nav.scss */
   nav input[type=radio] + label {
     display: inline-block;
     font-size: 1rem;
@@ -475,14 +476,21 @@ nav {
     -moz-transition-timing-function: ease-in;
     -o-transition-timing-function: ease-in;
     transition-timing-function: ease-in; }
-  /* line 51, ../sass/components/_nav.scss */
+  /* line 52, ../sass/components/_nav.scss */
   nav input[type=radio]:checked + label {
     display: inline-block;
     color: #f4f4f4;
     border-bottom: 1px #00ccff solid; }
-  /* line 56, ../sass/components/_nav.scss */
+  /* line 57, ../sass/components/_nav.scss */
   nav input[type=radio] + label:hover {
     color: #dbdbdb; }
+  /* line 60, ../sass/components/_nav.scss */
+  nav button {
+    border: none;
+    background: none;
+    border-bottom: 1px #00ccff solid;
+    color: white;
+    font-size: 1rem; }
 
 @media only screen and (max-width: 480px) {
   /* 480 =================================================== */

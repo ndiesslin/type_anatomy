@@ -97,6 +97,24 @@ h5 {
 h6 {
   font-size: 1.333em; }
 
+.h1 {
+  font-size: 3.375em; }
+
+.h2 {
+  font-size: 3em; }
+
+.h3 {
+  font-size: 2.25em; }
+
+.h4 {
+  font-size: 2em; }
+
+.h5 {
+  font-size: 1.5em; }
+
+.h6 {
+  font-size: 1.333em; }
+
 /*------ extra type sizes - part of modular type scale------*/
 .huge {
   font-size: 4.5em; }
@@ -303,48 +321,6 @@ hr {
 #letter46 {
   background: url(../img/letters/letter-46.svg) no-repeat center center; }
 
-/*
-Arm
-Ascender
-Ascender Line
-Ascent Line
-Axis
-Base Line
-Beak
-Bilateral Serif
-Bowl
-Bracket
-Cap Height
-Counter(open)
-Counter(closed)
-Cross Stroke
-Crotch
-Descender
-Decent Line
-Diacritic
-Ear
-Eye
-Finial
-Foot
-Hairline
-Head Serif
-Joint
-Leg
-Ligature
-Link/Neck
-Loop
-Overhang
-Serif
-Shoulder
-Spine
-Spur
-Stem
-Stress
-Tail
-Tittle
-Terminal
-Vertex
-*/
 nav {
   right: 0;
   width: 35%;
@@ -364,8 +340,9 @@ nav {
   overflow-y: scroll; }
   nav ul {
     padding: 2em 0;
-    width: 90%;
-    margin: 0 auto; }
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: auto; }
     nav ul li a {
       text-decoration: none;
       border-bottom: 1px #00ccff solid;
@@ -394,6 +371,16 @@ nav {
       color: #f4f4f4; }
   nav li:nth-child(3n+3) {
     margin-right: 0; }
+  nav #subnavigation {
+    height: 50px;
+    width: 100%; }
+    nav #subnavigation ul {
+      padding: 0; }
+      nav #subnavigation ul li {
+        text-align: center;
+        width: 100%;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 2em; }
 
 @media only screen and (max-width: 480px) {
   /* 480 =================================================== */
@@ -475,7 +462,7 @@ nav {
   nav h1 {
     font-size: 2.25em; }
   nav ul {
-    width: 285px;
+    width: 300px;
     font-size: 0.667em; }
   nav li {
     width: 30%;

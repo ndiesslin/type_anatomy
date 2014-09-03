@@ -52,13 +52,17 @@
 	                <li><a href="javascript:showletter('letter<?php echo $num++;?>');" class="nav_click"><?php echo $letter; ?></a></li>
 	            <?php endforeach;?>
             </ul>
+            <hr>
+            <div id="subnavigation">
+            	<ul>
+            		<li><a href="type_quiz/">Take the Quiz</a></li>
+            	</ul>
+            </div>
         </nav>
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -67,7 +71,6 @@
 
           ga('create', 'UA-46191310-4', 'auto');
           ga('send', 'pageview');
-
         </script>
     </body>
 </html>

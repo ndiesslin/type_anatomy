@@ -24,6 +24,7 @@ nav {
 	}
 	ul {
 		padding: 2em 0;
+		max-width: 500px;
 		width: 90%;
 		margin: 0 auto;
 		text-align: center;
@@ -55,5 +56,12 @@ nav {
 	}
 	input[type=radio] + label:hover {
 		color: darken($white, 10%);
+	}
+	button{
+		border: none;
+		background: none;
+		border-bottom: 1px #00ccff solid;
+		color: white;
+		font-size: 1rem;
 	}
 }
