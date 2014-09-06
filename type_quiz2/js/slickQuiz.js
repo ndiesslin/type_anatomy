@@ -18,7 +18,7 @@
 
             defaults = {
                 checkAnswerText:  'Check My Answer!',
-                nextQuestionText: 'Next Question',
+                nextQuestionText: 'Next &raquo;',
                 backButtonText: '',
                 completeQuizText: '',
                 tryAgainText: '',
@@ -27,18 +27,18 @@
                 questionTemplateText:  '%count. %text',
                 scoreTemplateText: '%score / %total',
                 nameTemplateText:  '<span>Quiz: </span>%name',
-                skipStartButton: true,
+                skipStartButton: false,
                 numberOfQuestions: null,
-                randomSortQuestions: true,
-                randomSortAnswers: true,
+                randomSortQuestions: false,
+                randomSortAnswers: false,
                 preventUnanswered: false,
                 disableScore: false,
                 disableRanking: false,
-                perQuestionResponseMessaging: false,
+                perQuestionResponseMessaging: true,
                 perQuestionResponseAnswers: false,
                 completionResponseMessaging: false,
-                displayQuestionCount: false,   // Deprecate?
-                displayQuestionNumber: false,  // Deprecate?
+                displayQuestionCount: true,   // Deprecate?
+                displayQuestionNumber: true,  // Deprecate?
                 animationCallbacks: { // only for the methods that have jQuery animations offering callback
                     setupQuiz: function () {},
                     startQuiz: function () {},
@@ -213,7 +213,7 @@
                 }
 
                 // Setup questions
-                var quiz  = $('<ol class="' + questionGroupClass + '" id="letter-space"></ol>'),
+                var quiz  = $('<ol class="' + questionGroupClass + '"></ol>'),
                     count = 1;
 
                 // Loop through questions object
@@ -238,7 +238,7 @@
                         } else {
                             formatQuestion = question.q;
                         }
-                        questionHTML.append('<h3 class="letters">' + formatQuestion + '</h3>');
+                        questionHTML.append('<h3>' + formatQuestion + '</h3>');
 
                         // Count the number of true values
                         var truths = 0;
@@ -252,7 +252,7 @@
                         }
 
                         // Now let's append the answers with checkboxes or radios depending on truth count
-                        var answerHTML = $('<nav><h1>Type Quiz</h1><div id="mobile-logo"></div><hr><ul class="' + answersClass + '"></ul></nav>');
+                        var answerHTML = $('<ul class="' + answersClass + '"></ul>');
 
                         // Get the answers
                         var answers = plugin.config.randomSortAnswers ?
