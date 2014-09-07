@@ -1,8 +1,7 @@
 @import "_variables";
 @import "compass/";
 
-ul {
-	top: 0;
+nav {
 	right: 0;
     width: 35%;
     height: 100%;

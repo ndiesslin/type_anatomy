@@ -437,7 +437,8 @@ hr {
   background: url(../img/letters/letter-46.svg) no-repeat center center; }
 
 /* line 4, ../sass/components/_nav.scss */
-nav {
+ul {
+  top: 0;
   right: 0;
   width: 35%;
   height: 100%;
@@ -446,36 +447,36 @@ nav {
   position: fixed;
   overflow-y: scroll;
   text-align: center; }
-  /* line 13, ../sass/components/_nav.scss */
-  nav #flexcontainer2 {
+  /* line 14, ../sass/components/_nav.scss */
+  ul #flexcontainer2 {
     width: 80%;
     margin: 0 auto;
     color: #f4f4f4; }
-  /* line 18, ../sass/components/_nav.scss */
-  nav h1 {
+  /* line 19, ../sass/components/_nav.scss */
+  ul h1 {
     color: #f4f4f4;
     font-family: 'Libre Baskerville', serif;
     font-size: 2.25em;
     text-align: center;
     padding: .5em;
     margin: .5em 0; }
-  /* line 26, ../sass/components/_nav.scss */
-  nav ul {
+  /* line 27, ../sass/components/_nav.scss */
+  ul ul {
     padding: 2em 0;
     width: 90%;
     margin: 0 auto;
     text-align: center; }
-  /* line 32, ../sass/components/_nav.scss */
-  nav #next-button {
+  /* line 33, ../sass/components/_nav.scss */
+  ul #next-button {
     right: 5%;
     color: #f4f4f4;
     border-bottom: 1px #00ccff solid;
     cursor: pointer; }
-  /* line 38, ../sass/components/_nav.scss */
-  nav input[type=radio] {
+  /* line 39, ../sass/components/_nav.scss */
+  ul input[type=radio] {
     display: none; }
-  /* line 41, ../sass/components/_nav.scss */
-  nav input[type=radio] + label {
+  /* line 42, ../sass/components/_nav.scss */
+  ul input[type=radio] + label {
     display: inline-block;
     font-size: 1rem;
     line-height: 1rem;
@@ -494,16 +495,16 @@ nav {
     -moz-transition-timing-function: ease-in;
     -o-transition-timing-function: ease-in;
     transition-timing-function: ease-in; }
-  /* line 52, ../sass/components/_nav.scss */
-  nav input[type=radio]:checked + label {
+  /* line 53, ../sass/components/_nav.scss */
+  ul input[type=radio]:checked + label {
     display: inline-block;
     color: #f4f4f4;
     border-bottom: 1px #00ccff solid; }
-  /* line 57, ../sass/components/_nav.scss */
-  nav input[type=radio] + label:hover {
+  /* line 58, ../sass/components/_nav.scss */
+  ul input[type=radio] + label:hover {
     color: #dbdbdb; }
-  /* line 60, ../sass/components/_nav.scss */
-  nav button {
+  /* line 61, ../sass/components/_nav.scss */
+  ul button {
     border: none;
     background: none;
     border-bottom: 1px #00ccff solid;
@@ -550,16 +551,16 @@ nav {
     height: 60%; }
 
   /* line 36, ../sass/components/_media-queries.scss */
-  nav {
+  ul {
     top: 0;
     width: 100%;
-    height: 40%; }
-    /* line 40, ../sass/components/_media-queries.scss */
-    nav ul {
-      width: 90%;
-      padding: 1em 0; }
+    height: 40%;
+    /*         ul{
+                width: 90%;
+                padding: 1em 0;
+            } */ }
     /* line 44, ../sass/components/_media-queries.scss */
-    nav input[type=radio] + label {
+    ul input[type=radio] + label {
       margin: 0.5rem 0; } }
 @media only screen and (min-width: 480px) {
   /* 480 =================================================== */
@@ -601,16 +602,16 @@ nav {
     height: 60%; }
 
   /* line 83, ../sass/components/_media-queries.scss */
-  nav {
+  ul {
     top: 0;
     width: 100%;
-    height: 40%; }
-    /* line 87, ../sass/components/_media-queries.scss */
-    nav ul {
-      width: 90%;
-      padding: 1em 0; }
+    height: 40%;
+    /* ul {
+        width: 90%;
+        padding: 1em 0;
+    } */ }
     /* line 91, ../sass/components/_media-queries.scss */
-    nav input[type=radio] + label {
+    ul input[type=radio] + label {
       margin: 0.5rem 0; } }
 @media only screen and (min-width: 600px) {
   /* 600 =================================================== */
@@ -632,14 +633,14 @@ nav {
     height: 60%; }
 
   /* line 113, ../sass/components/_media-queries.scss */
-  nav {
+  ul {
     top: 0;
     width: 100%;
-    height: 40%; }
-    /* line 117, ../sass/components/_media-queries.scss */
-    nav ul {
-      width: 90%;
-      padding: 2em 0; } }
+    height: 40%;
+    /* ul {
+        width: 90%;
+        padding: 2em 0;
+    } */ } }
 @media only screen and (min-width: 768px) {
   /* 768 =================================================== */
   /* line 126, ../sass/components/_media-queries.scss */
@@ -672,29 +673,30 @@ nav {
     left: 0; }
 
   /* line 149, ../sass/components/_media-queries.scss */
-  nav {
+  ul {
     right: 0;
     width: 35%;
-    height: 100%; }
+    height: 100%;
+    /* ul {
+        width: 225px;
+        font-size: 0.667em;
+    } */ }
     /* line 153, ../sass/components/_media-queries.scss */
-    nav h1 {
-      font-size: 1.5em; }
-    /* line 156, ../sass/components/_media-queries.scss */
-    nav ul {
-      width: 225px;
-      font-size: 0.667em; } }
+    ul h1 {
+      font-size: 1.5em; } }
 @media only screen and (min-width: 992px) {
   /* 992 =================================================== */
-  /* line 166, ../sass/components/_media-queries.scss */
-  nav h1 {
-    font-size: 2.25em; }
-  /* line 169, ../sass/components/_media-queries.scss */
-  nav ul {
-    width: 285px;
-    font-size: 0.667em; } }
+  /* line 165, ../sass/components/_media-queries.scss */
+  ul {
+    /* ul {
+        width: 285px;
+        font-size: 0.667em;
+    } */ }
+    /* line 166, ../sass/components/_media-queries.scss */
+    ul h1 {
+      font-size: 2.25em; } }
 @media only screen and (min-width: 1382px) {
   /* 1382 =================================================== */
   /* line 179, ../sass/components/_media-queries.scss */
-  nav ul {
-    width: 80%;
+  ul {
     font-size: 0.889em; } }

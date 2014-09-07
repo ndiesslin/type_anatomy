@@ -7,7 +7,8 @@ var answers = [
     "Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender Height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body width", "Bowl", "Bracket", "Cap Height", "Character", "Width", "Counter (Open)", "Counter (Closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head", "Serif", "Joint", "Leg", "Ligature", "Link/Neck", "Loop", "Overhang", "Serif", "Shoulder", "Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex"
 ];
 
-var num = Math.floor(Math.random() * answers.length);
+//working on a simpler way of writing answers
+//var num = Math.floor(Math.random() * answers.length);
 
 // Build the quiz here
 var quizJSON = {

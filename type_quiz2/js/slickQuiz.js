@@ -18,7 +18,7 @@
 
             defaults = {
                 checkAnswerText:  'Check My Answer!',
-                nextQuestionText: 'Next &raquo;',
+                nextQuestionText: 'Next Question',
                 backButtonText: '',
                 completeQuizText: '',
                 tryAgainText: '',
@@ -27,18 +27,18 @@
                 questionTemplateText:  '%count. %text',
                 scoreTemplateText: '%score / %total',
                 nameTemplateText:  '<span>Quiz: </span>%name',
-                skipStartButton: false,
+                skipStartButton: true,
                 numberOfQuestions: null,
-                randomSortQuestions: false,
-                randomSortAnswers: false,
+                randomSortQuestions: true,
+                randomSortAnswers: true,
                 preventUnanswered: false,
                 disableScore: false,
                 disableRanking: false,
-                perQuestionResponseMessaging: true,
+                perQuestionResponseMessaging: false,
                 perQuestionResponseAnswers: false,
                 completionResponseMessaging: false,
-                displayQuestionCount: true,   // Deprecate?
-                displayQuestionNumber: true,  // Deprecate?
+                displayQuestionCount: false,   // Deprecate?
+                displayQuestionNumber: false,  // Deprecate?
                 animationCallbacks: { // only for the methods that have jQuery animations offering callback
                     setupQuiz: function () {},
                     startQuiz: function () {},
@@ -56,6 +56,9 @@
 
             // Class Name Strings (Used for building quiz and for selectors)
             questionCountClass     = 'questionCount',
+            letterSpaceId          = 'letter-space',
+            lettersClass           = 'letters', 
+            mobileLogoId           = 'mobile-logo',
             questionGroupClass     = 'questions',
             questionClass          = 'question',
             answersClass           = 'answers',
@@ -213,7 +216,7 @@
                 }
 
                 // Setup questions
-                var quiz  = $('<ol class="' + questionGroupClass + '"></ol>'),
+                var quiz  = $('<ol class="' + questionGroupClass + '" id="' + letterSpaceId + '"></ol>'),
                     count = 1;
 
                 // Loop through questions object
@@ -238,7 +241,7 @@
                         } else {
                             formatQuestion = question.q;
                         }
-                        questionHTML.append('<h3>' + formatQuestion + '</h3>');
+                        questionHTML.append('<h3 class="' + lettersClass + '">' + formatQuestion + '</h3>');
 
                         // Count the number of true values
                         var truths = 0;
@@ -252,7 +255,9 @@
                         }
 
                         // Now let's append the answers with checkboxes or radios depending on truth count
+                        //var answerHTML = $('<nav><h1>Type Quiz</h1><div id="' + mobileLogoId  + '"></div><hr></nav><ul class="' + answersClass + '"></ul></nav>');
                         var answerHTML = $('<ul class="' + answersClass + '"></ul>');
+                        //$( ".answers" ).wrap( "<nav><h1>Type Quiz</h1><div id="' + mobileLogoId  + '"></div><hr></nav>" );
 
                         // Get the answers
                         var answers = plugin.config.randomSortAnswers ?
