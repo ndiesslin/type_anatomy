@@ -241,7 +241,7 @@
                         } else {
                             formatQuestion = question.q;
                         }
-                        questionHTML.append('<h3 class="' + lettersClass + '">' + formatQuestion + '</h3>');
+                        questionHTML.append('<section class="' + lettersClass + '">' + formatQuestion + '</section>');
 
                         // Count the number of true values
                         var truths = 0;

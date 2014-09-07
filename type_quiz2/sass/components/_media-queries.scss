@@ -2,6 +2,9 @@
 
 @media only screen and (max-width: 480px) {
   /* 480 =================================================== */
+    #title {
+        display: none;
+    }
     hr {
         display: none;
     }
@@ -37,6 +40,7 @@
         top: 0;
         width: 100%;
         height: 40%;
+        overflow-y: scroll;
 /*         ul{
             width: 90%;
             padding: 1em 0;
@@ -44,11 +48,17 @@
         input[type=radio] + label {
             margin: 0.5rem 0;
         }
+        li {
+            margin: 2% 0;
+        }
     }
 }
 
 @media only screen and (min-width: 480px) {
   /* 480 =================================================== */
+    #title {
+        display: none;
+    }
     hr {
         display: none;
     }
@@ -91,11 +101,17 @@
         input[type=radio] + label {
             margin: 0.5rem 0;
         }
+        li {
+            margin: 2% 0;
+        }
     }
 }
 
 @media only screen and (min-width: 600px) {
   /* 600 =================================================== */
+    #title {
+        display: none;
+    }
     #next-button {
         position: fixed;  
         bottom: 62%;
@@ -113,7 +129,12 @@
     ul {
         top: 0;
         width: 100%;
+        top: 0;
         height: 40%;
+        overflow-y: scroll;
+        li {
+            margin: 2% 0;
+        }
         /* ul {
             width: 90%;
             padding: 2em 0;
@@ -123,6 +144,9 @@
 
 @media only screen and (min-width: 768px) {
   /* 768 =================================================== */
+    #title {
+        display: table;
+    }
     hr {
         display: inherit;
     }
@@ -149,9 +173,14 @@
     ul {
     right: 0;
     width: 35%;
-    height: 100%;
+    top: 20%;
+    height: 80%;
+    overflow: hidden;
         h1 {
             font-size: 1.5em;
+        }
+        li {
+            margin: 2% 0;
         }
         /* ul {
             width: 225px;
@@ -178,6 +207,9 @@
   /* 1382 =================================================== */
     ul {
         //width: 80%;
+        top: 20%;
+        height: 80%;
         font-size: 0.889em;
+        overflow: hidden;
     }
 }

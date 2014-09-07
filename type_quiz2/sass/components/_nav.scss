@@ -1,35 +1,25 @@
 @import "_variables";
 @import "compass/";
 
+.answers {
+	padding:0;
+}
+
 ul {
 	top: 0;
 	right: 0;
     width: 35%;
-    height: 100%;
+    padding: 2% 0 0 0;
     background: $black;
     float: right;
     position: fixed;
-	overflow-y: scroll;
+    overflow: hidden;
 	text-align: center;
 	#flexcontainer2 {
     	width: 80%;
     	margin: 0 auto;
     	color: $white;
     }
-	h1 {
-		color: $white;
-		font-family: 'Libre Baskerville', serif;
-		font-size: 2.25em;
-		text-align: center;
-		padding: .5em;
-		margin: .5em 0;
-	}
-	ul {
-		padding: 2em 0;
-		width: 90%;
-		margin: 0 auto;
-		text-align: center;
-	}
 	#next-button {
 		right: 5%;
 		color: $white;
