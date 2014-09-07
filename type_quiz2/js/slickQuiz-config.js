@@ -77,6 +77,28 @@ var quizJSON = {
             ],
             "correct": "<p>That's right!</p>",
             "incorrect": "<p>Uhh no.</p>" // no comma here
+        },
+        { // Question 6
+            "q": letters.concat('6').concat(lettersEnd),
+            "a": [
+                {"option": answers[5], "correct": true},
+                {"option": answers[1], "correct": false},
+                {"option": answers[19], "correct": false},
+                {"option": answers[22], "correct": false} // no comma here
+            ],
+            "correct": "<p>That's right!</p>",
+            "incorrect": "<p>Uhh no.</p>" // no comma here
+        },
+        { // Question 7
+            "q": letters.concat('7').concat(lettersEnd),
+            "a": [
+                {"option": answers[6], "correct": true},
+                {"option": answers[7], "correct": false},
+                {"option": answers[3], "correct": false},
+                {"option": answers[16], "correct": false} // no comma here
+            ],
+            "correct": "<p>That's right!</p>",
+            "incorrect": "<p>Uhh no.</p>" // no comma here
         } // no comma here
     ]
 };
