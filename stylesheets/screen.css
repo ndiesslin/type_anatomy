@@ -141,6 +141,9 @@ html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif; }
 
+h2 {
+  display: none; }
+
 hr {
   width: 90%;
   margin: 0 auto;
@@ -326,51 +329,47 @@ nav {
   width: 35%;
   height: 100%;
   background: #282828;
-  float: right; }
-
-nav h1 {
-  color: #f4f4f4;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 2.25em;
-  text-align: center;
-  padding: .5em;
-  margin: .5em 0; }
-
-nav {
+  float: right;
   overflow-y: scroll; }
+  nav h1 {
+    color: #f4f4f4;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.25em;
+    text-align: center;
+    padding: .5em;
+    margin: .5em 0; }
+  nav h2 {
+    display: none; }
   nav ul {
     padding: 2em 0;
     max-width: 500px;
     margin: 0 auto;
     overflow: auto; }
-    nav ul li a {
-      text-decoration: none;
-      border-bottom: 1px #00ccff solid;
-      -webkit-transition-property: all;
-      -moz-transition-property: all;
-      -o-transition-property: all;
-      transition-property: all;
-      -webkit-transition-duration: 0.1s;
-      -moz-transition-duration: 0.1s;
-      -o-transition-duration: 0.1s;
-      transition-duration: 0.1s;
-      -webkit-transition-timing-function: ease-in;
-      -moz-transition-timing-function: ease-in;
-      -o-transition-timing-function: ease-in;
-      transition-timing-function: ease-in; }
-    nav ul li a:hover {
-      opacity: .85; }
-    nav ul li a:active {
-      border-bottom: 1px #ff6950 solid; }
-  nav li {
-    width: 30%;
-    float: left;
-    margin-right: 5%; }
-    nav li a {
-      line-height: 3em;
-      color: #f4f4f4; }
-  nav li:nth-child(3n+3) {
-    margin-right: 0; }
+    nav ul li {
+      width: 30%;
+      float: left;
+      margin-right: 5%; }
+      nav ul li a {
+        line-height: 3em;
+        color: #f4f4f4;
+        text-decoration: none;
+        border-bottom: 1px #00ccff solid;
+        -webkit-transition-property: all;
+        -moz-transition-property: all;
+        -o-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.1s;
+        -moz-transition-duration: 0.1s;
+        -o-transition-duration: 0.1s;
+        transition-duration: 0.1s;
+        -webkit-transition-timing-function: ease-in;
+        -moz-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in; }
+      nav ul li:hover {
+        opacity: .85; }
+    nav ul li:nth-child(3n+3) {
+      margin-right: 0; }
   nav #subnavigation {
     height: 50px;
     width: 100%; }

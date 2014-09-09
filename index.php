@@ -5,10 +5,12 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Type Anatomy</title>
-        <meta name="description" content="">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge'><![endif]-->
+        <meta name="description" content="Type Anatomy is a website designed to help people understand and learn the anatomy of typography.">
+        <meta name="keywords" content="type, anatomy, typography, typography quiz, design, web, nicholas, diesslin">
+        <meta name="author" content="Nicholas Diesslin">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Type Anatomy</title>
         <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
         <link rel="icon" href="img/favicon.png" type="image/x-icon">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -31,11 +33,10 @@
         <![endif]-->
         <a href="javascript:showletter('letter1');" class="letters" id="intro">
             <div id="logo"></div>
-            <h1></h1>
             <div id="continue-here"><em>Click anywhere to continue to site ...</em></div>
         </a>
         <section id="letter-space">
-            <h1></h1>
+            <h2>Typography letters</h2>
             <?php 
 	        for($i=1;$i<47;$i++) {?>
 	        <div class="letters" id="letter<?php echo $i; ?>"></div>
@@ -43,6 +44,7 @@
         </section>
         <nav>
             <h1>Type Anatomy</h1>
+            <h2>A website on the anatomy of typography.</h2>
             <hr>
             <ul>
 	            <?php 
