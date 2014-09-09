@@ -102,7 +102,15 @@ var quizJSON = {
         } // no comma here
 
         /*for (i = 0; i < letters.length; i++) { 
-            text += cars[i] + "<br>";
+            '{'
+                "q": letters.concat(letters[i]).concat(lettersEnd),
+                "a": [
+                    {"option": answers[i+1], "correct": true},
+                    {"option": answers[i+6], "correct": false},
+                    {"option": answers[i+13], "correct": false},
+                    {"option": answers[i+18], "correct": false}
+                ]
+            '},'
         }*/
     ]
 };
