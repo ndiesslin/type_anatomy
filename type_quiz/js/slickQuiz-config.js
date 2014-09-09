@@ -16,10 +16,10 @@ var quizJSON = {
         "name":    "Type Quiz",
         "main":    "<p>Think you understand the type anatomy?</p>",
         "results": "<h5>Want to learn more?</h5><p>go to <a href=\"http://diesslin.tk/type_anatomy/\">Type Anatomy</a>, to learn all the terms on the type anatomy.</p>",
-        "level1":  "Jeopardy Ready",
-        "level2":  "Jeopardy Contender",
-        "level3":  "Jeopardy Amateur",
-        "level4":  "Jeopardy Newb",
+        "level1":  "You are a master of the craft!",
+        "level2":  "You know your typography pretty well, but keep trying.",
+        "level3":  "You should probably learn your typography a little more...",
+        "level4":  "You need to learn your typography a lot more...",
         "level5":  "Stay in school, kid..." // no comma here
     },
     "questions": [
@@ -100,5 +100,9 @@ var quizJSON = {
             "correct": "<p>That's right!</p>",
             "incorrect": "<p>Uhh no.</p>" // no comma here
         } // no comma here
+
+        /*for (i = 0; i < letters.length; i++) { 
+            text += cars[i] + "<br>";
+        }*/
     ]
 };
