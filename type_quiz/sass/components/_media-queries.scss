@@ -41,10 +41,6 @@
         width: 100%;
         height: 40%;
         overflow-y: scroll;
-/*         ul{
-            width: 90%;
-            padding: 1em 0;
-        } */
         input[type=radio] + label {
             margin: 0.5rem 0;
         }
@@ -94,10 +90,7 @@
         top: 0;
         width: 100%;
         height: 40%;
-        /* ul {
-            width: 90%;
-            padding: 1em 0;
-        } */
+        overflow-y: scroll;
         input[type=radio] + label {
             margin: 0.5rem 0;
         }
@@ -135,10 +128,6 @@
         li {
             margin: 2% 0;
         }
-        /* ul {
-            width: 90%;
-            padding: 2em 0;
-        } */
     }
 }
 
@@ -182,10 +171,6 @@
         li {
             margin: 2% 0;
         }
-        /* ul {
-            width: 225px;
-            font-size: 0.667em;
-        } */
     }
 }
 
@@ -195,10 +180,6 @@
         h1 {
             font-size: 2.25em;
         }
-        /* ul {
-            width: 285px;
-            font-size: 0.667em;
-        } */
     }
 
 }
@@ -206,10 +187,19 @@
 @media only screen and (min-width: 1382px) {
   /* 1382 =================================================== */
     ul {
-        //width: 80%;
         top: 20%;
         height: 80%;
         font-size: 0.889em;
         overflow: hidden;
+    }
+}
+
+@media only screen and (min-height: 600px) {
+    ul {
+        li {
+          &:nth-child(1) {
+            margin: 8% 0 0 0;
+          } 
+        }
     }
 }
