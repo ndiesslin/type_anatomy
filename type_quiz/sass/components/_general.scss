@@ -60,7 +60,20 @@ hr {
 	min-height: 175px;
 	width: 40%;
 	height: 25%;
-	margin: 0 auto;
+	margin: 10% auto 0;
 	background: $black;
 	color: $white;
+	.quizResultsCopy{
+		p{
+			a {
+				color: $blue;
+				@include transition-property(all);
+				@include transition-duration(.2s);
+				@include transition-timing-function(ease-in);
+				&:hover {
+					color: darken($blue, 10%);
+				}
+			}
+		}
+	}
 }

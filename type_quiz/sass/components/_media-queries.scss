@@ -48,6 +48,9 @@
             margin: 2% 0;
         }
     }
+    .quizResults {
+        min-width: 90%;
+    }
 }
 
 @media only screen and (min-width: 480px) {
@@ -98,6 +101,9 @@
             margin: 2% 0;
         }
     }
+    .quizResults {
+        min-width: 90%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -128,6 +134,9 @@
         li {
             margin: 2% 0;
         }
+    }
+    .quizResults {
+        min-width: 90%;
     }
 }
 
@@ -199,6 +208,16 @@
         li {
           &:nth-child(1) {
             margin: 8% 0 0 0;
+          } 
+        }
+    }
+}
+
+@media only screen and (min-height: 1000px) {
+    ul {
+        li {
+          &:nth-child(1) {
+            margin:16% 0 0 0;
           } 
         }
     }
