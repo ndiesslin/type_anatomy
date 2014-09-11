@@ -38,8 +38,8 @@
         <section id="letter-space">
             <h2>Typography letters</h2>
             <?php 
-	        for($i=1;$i<47;$i++) {?>
-	        <div class="letters" id="letter<?php echo $i; ?>"></div>
+            for($i=1;$i<47;$i++) {?>
+            <div class="letters" id="letter<?php echo $i; ?>"></div>
             <?php }?>
         </section>
         <nav>

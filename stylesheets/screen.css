@@ -395,14 +395,14 @@ nav {
     nav ul {
       width: 90%;
       padding: 1em 0; }
-    nav li {
-      width: 50%;
-      float: left;
-      margin-right: 0; }
-      nav li a {
-        font-size: 1em;
-        line-height: 3em;
-        color: #f4f4f4; } }
+      nav ul li {
+        width: 50%;
+        float: left;
+        margin-right: 0; }
+        nav ul li a {
+          font-size: 1em;
+          line-height: 3em;
+          color: #f4f4f4; } }
 @media only screen and (min-width: 480px) {
   /* 480 =================================================== */
   #letter-space {
@@ -447,15 +447,15 @@ nav {
     nav ul {
       width: 225px;
       font-size: 0.667em; }
-    nav li {
-      width: 50%;
-      float: left;
-      margin-right: 0; }
-      nav li a {
-        line-height: 3em;
-        color: #f4f4f4; }
-    nav li:nth-child(3n+3) {
-      margin-right: 0; } }
+      nav ul li {
+        width: 50%;
+        float: left;
+        margin-right: 0; }
+        nav ul li a {
+          line-height: 3em;
+          color: #f4f4f4; }
+      nav ul:nth-child(3n+3) {
+        margin-right: 0; } }
 @media only screen and (min-width: 992px) {
   /* 992 =================================================== */
   nav h1 {
@@ -463,15 +463,15 @@ nav {
   nav ul {
     width: 300px;
     font-size: 0.667em; }
-  nav li {
-    width: 30%;
-    float: left;
-    margin-right: 5%; }
-    nav li a {
-      line-height: 3em;
-      color: #f4f4f4; }
-  nav li:nth-child(3n+3) {
-    margin-right: 0; } }
+    nav ul li {
+      width: 30%;
+      float: left;
+      margin-right: 5%; }
+      nav ul li a {
+        line-height: 3em;
+        color: #f4f4f4; }
+    nav ul li:nth-child(3n+3) {
+      margin-right: 0; } }
 @media only screen and (min-width: 1382px) {
   /* 1382 =================================================== */
   nav ul {

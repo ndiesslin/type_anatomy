@@ -28,7 +28,7 @@
                 scoreTemplateText: '%score / %total',
                 nameTemplateText:  '<span>Quiz: </span>%name',
                 skipStartButton: true,
-                numberOfQuestions: 5,
+                numberOfQuestions: 10,
                 randomSortQuestions: true,
                 randomSortAnswers: true,
                 preventUnanswered: false,

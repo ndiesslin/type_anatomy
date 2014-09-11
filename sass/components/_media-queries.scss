@@ -14,16 +14,16 @@
         ul{
             width: 90%;
             padding: 1em 0;
-        }
-        li {
-            width: 50%;
-            float: left;
-            margin-right: 0;
-            a{
-                font-size: 1em;
-                line-height: 3em;
-                color: $white;
-            }
+            li {
+	            width: 50%;
+	            float: left;
+	            margin-right: 0;
+	            a{
+	                font-size: 1em;
+	                line-height: 3em;
+	                color: $white;
+	            }
+	        }
         }
     }
 }
@@ -81,18 +81,18 @@
         ul {
             width: 225px;
             font-size: 0.667em;
-        }
-        li {
-            width: 50%;
-            float: left;
-            margin-right: 0;
-            a{
-                line-height: 3em;
-                color: $white;
-            }
-        }
-        li:nth-child(3n+3) {
-            margin-right: 0;
+            li {
+	            width: 50%;
+	            float: left;
+	            margin-right: 0;
+	            a{
+	                line-height: 3em;
+	                color: $white;
+	            }
+	        }
+	        &:nth-child(3n+3) {
+	            margin-right: 0;
+	        }
         }
     }
 }
@@ -106,18 +106,18 @@
         ul {
             width: 300px;
             font-size: 0.667em;
-        }
-        li {
-            width: 30%;
-            float: left;
-            margin-right: 5%;
-            a{
-                line-height: 3em;
-                color: $white;
-            }
-        }
-        li:nth-child(3n+3) {
-            margin-right: 0;
+            li {
+	            width: 30%;
+	            float: left;
+	            margin-right: 5%;
+	            a{
+	                line-height: 3em;
+	                color: $white;
+	            }
+	        }
+	        li:nth-child(3n+3) {
+	            margin-right: 0;
+	        }
         }
     }
 
