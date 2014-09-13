@@ -31,7 +31,7 @@ nav {
 				line-height: 3em;
 				color: $white;
 				text-decoration: none;
-				border-bottom: 1px $blue solid;
+				//border-bottom: 1px $blue solid;
 				@include transition-property(all);
 				@include transition-duration(.1s);
 				@include transition-timing-function(ease-in);
@@ -54,6 +54,9 @@ nav {
 				width: 100%;
 				font-family: 'Libre Baskerville', serif;
 				font-size: 2em;
+				a {
+					border-bottom: 1px $blue solid;
+				}
 			}
 		}
 	}

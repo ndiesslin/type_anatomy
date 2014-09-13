@@ -353,7 +353,6 @@ nav {
         line-height: 3em;
         color: #f4f4f4;
         text-decoration: none;
-        border-bottom: 1px #00ccff solid;
         -webkit-transition-property: all;
         -moz-transition-property: all;
         -o-transition-property: all;
@@ -380,6 +379,8 @@ nav {
         width: 100%;
         font-family: 'Libre Baskerville', serif;
         font-size: 2em; }
+        nav #subnavigation ul li a {
+          border-bottom: 1px #00ccff solid; }
 
 @media only screen and (max-width: 480px) {
   /* 480 =================================================== */

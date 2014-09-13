@@ -10,7 +10,7 @@ function showletter(letterchosen) {
 		  }
 		});
 		$('.nav_click').click(function(e){
-		    $('.nav_click').css("border-bottom", "1px #00ccff solid");
-		    $(this).css("border-bottom", "1px #ff6950 solid");
+		    $('.nav_click').css("border-bottom", "none");
+		    $(this).css("border-bottom", "1px #00ccff solid");
 		});
 }
