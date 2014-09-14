@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,39 +23,39 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+  /* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../lib/gems/1.9.1/gems/compass-core-1.0.0/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
 /*------ typography ------*/
@@ -71,12 +71,12 @@ body {
   background-color: #fbfbfb;
   color: #030303; }
 
-/* line 16, ../sass/components/_typography.scss */
+/* line 17, ../sass/components/_typography.scss */
 b,
 strong {
   font-weight: bold; }
 
-/* line 21, ../sass/components/_typography.scss */
+/* line 26, ../sass/components/_typography.scss */
 em,
 address,
 cite,
@@ -85,7 +85,7 @@ i,
 var {
   font-style: italic; }
 
-/* line 30, ../sass/components/_typography.scss */
+/* line 33, ../sass/components/_typography.scss */
 code,
 pre,
 samp,
@@ -162,7 +162,7 @@ html, body {
   height: 20%;
   text-align: center;
   background: #282828;
-  color: #F4F4F4;
+  color: #f4f4f4;
   font-size: 2.25em;
   font-family: 'Libre Baskerville', serif; }
 
@@ -184,7 +184,7 @@ hr {
   left: 5%;
   bottom: 0;
   margin: 0;
-  border-color: #F4F4F4; }
+  border-color: #f4f4f4; }
 
 /* line 47, ../sass/components/_general.scss */
 #progress {
@@ -193,7 +193,7 @@ hr {
   top: 0;
   width: 10%;
   height: 10px;
-  background: #5BF165;
+  background: #5bf165;
   z-index: 9999; }
 
 /* line 57, ../sass/components/_general.scss */
@@ -205,7 +205,27 @@ hr {
   height: 25%;
   margin: 0 auto;
   background: #282828;
-  color: #F4F4F4; }
+  color: #f4f4f4; }
+  /* line 68, ../sass/components/_general.scss */
+  .quizResults .quizResultsCopy p a {
+    color: #f4f4f4;
+    text-decoration: none;
+    border-bottom: 1px #00ccff solid;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-in;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+  /* line 76, ../sass/components/_general.scss */
+  .quizResults .quizResultsCopy p:hover {
+    opacity: .85; }
 
 /* line 1, ../sass/components/_intro.scss */
 #intro {
@@ -232,7 +252,7 @@ hr {
   position: absolute;
   right: 1.5em;
   bottom: 1em;
-  color: #F4F4F4; }
+  color: #f4f4f4; }
 
 /* line 3, ../sass/components/_letter-space.scss */
 #letter-space {
@@ -253,7 +273,7 @@ hr {
   height: 100%;
   background: url(../img/back.svg) repeat-x center;
   background-size: contain;
-  background-color: #F4F4F4; }
+  background-color: #f4f4f4; }
 
 /* line 27, ../sass/components/_letter-space.scss */
 .nextQuestion.checkAnswer {
@@ -264,7 +284,7 @@ hr {
   font-size: 2rem;
   text-decoration: none;
   color: #282828;
-  background: #F4F4F4; }
+  background: #f4f4f4; }
 
 /* line 38, ../sass/components/_letter-space.scss */
 #flexcontainer {
@@ -273,7 +293,7 @@ hr {
   float: left;
   background: url(../img/back.svg) repeat-x center;
   background-size: contain;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   position: fixed; }
   /* line 46, ../sass/components/_letter-space.scss */
   #flexcontainer .letters {
@@ -485,12 +505,12 @@ ul {
   ul #flexcontainer2 {
     width: 80%;
     margin: 0 auto;
-    color: #F4F4F4; }
+    color: #f4f4f4; }
   /* line 23, ../sass/components/_nav.scss */
   ul #next-button {
     right: 5%;
-    color: #F4F4F4;
-    border-bottom: 1px #00CCFF solid;
+    color: #f4f4f4;
+    border-bottom: 1px #00ccff solid;
     cursor: pointer; }
   /* line 29, ../sass/components/_nav.scss */
   ul input[type=radio] {
@@ -502,24 +522,24 @@ ul {
     line-height: 1rem;
     margin: 1rem 0;
     cursor: pointer;
-    color: #F4F4F4;
+    color: #f4f4f4;
+    -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
-    -webkit-transition-property: all;
     transition-property: all;
+    -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
-    -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in;
     -moz-transition-timing-function: ease-in;
     -o-transition-timing-function: ease-in;
-    -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in; }
   /* line 43, ../sass/components/_nav.scss */
   ul input[type=radio]:checked + label {
     display: inline-block;
-    color: #F4F4F4;
-    border-bottom: 1px #00CCFF solid; }
+    color: #f4f4f4;
+    border-bottom: 1px #00ccff solid; }
   /* line 48, ../sass/components/_nav.scss */
   ul input[type=radio] + label:hover {
     color: #dbdbdb; }
