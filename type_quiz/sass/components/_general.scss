@@ -56,11 +56,11 @@ hr {
 
 .quizResults {
 	min-width: 500px;
-	max-width: 900px;
+	max-width: 700px;
 	min-height: 175px;
-	width: 40%;
+	width: 500px;
 	height: 25%;
-	margin: 0 auto;
+	margin: 10% auto 0;
 	background: $black;
 	color: $white;
 	.quizResultsCopy {
@@ -72,6 +72,9 @@ hr {
 				@include transition-property(all);
 				@include transition-duration(.1s);
 				@include transition-timing-function(ease-in);
+				&:hover {
+					color: darken($blue, 10%);
+				}
 			}
 			&:hover {
 				opacity: .85;
