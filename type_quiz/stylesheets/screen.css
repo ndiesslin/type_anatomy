@@ -758,4 +758,5 @@ ul {
 @media only screen and (min-height: 600px) {
   /* line 200, ../sass/components/_media-queries.scss */
   ul li:nth-child(1) {
-    margin: 8% 0 0 0; } }
+    margin: 8% 0 0 0;
+    margin: 8vh 0 0 0; } }
