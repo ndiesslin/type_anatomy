@@ -36,23 +36,26 @@
             <div id="continue-here"><em>Click anywhere to continue to site ...</em></div>
         </a>
         <section id="letter-space">
+
             <h2>Typography letters</h2>
             <?php 
-            for($i=1;$i<47;$i++) {?>
-            <div class="letters" id="letter<?php echo $i; ?>"></div>
+        	for($i=1;$i<47;$i++) {?><div class="letters" id="letter<?php echo $i; ?>"></div>
             <?php }?>
-        </section>
+
+    	</section>
         <nav>
             <h1>Type Anatomy</h1>
             <h2>A website on the anatomy of typography.</h2>
             <hr>
             <ul>
-	            <?php 
-	            $letters = array("Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender Height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body Width", "Bowl", "Bracket", "Cap Height", "Character Width", "Counter (Open)", "Counter (Closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/ Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex");
-		        $num = 1;
-	            foreach ($letters as $letter) : ?>
-	                <li><a href="javascript:showletter('letter<?php echo $num++;?>');" class="nav_click"><?php echo $letter; ?></a></li>
-	            <?php endforeach;?>
+            
+            <?php 
+            $letters = array("Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender Height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body Width", "Bowl", "Bracket", "Cap Height", "Character Width", "Counter (Open)", "Counter (Closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/ Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex");
+	        $num = 1;
+            foreach ($letters as $letter) : ?>
+	<li><a href="javascript:showletter('letter<?php echo $num++;?>');" class="nav_click"><?php echo $letter; ?></a></li>
+            <?php endforeach;?>
+
             </ul>
             <hr>
             <div id="subnavigation">
@@ -70,7 +73,6 @@
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
           ga('create', 'UA-46191310-4', 'auto');
           ga('send', 'pageview');
         </script>
