@@ -38,7 +38,7 @@
         <section id="letter-space">
 
             <h2>Typography letters</h2>
-            <?php 
+            <?php
         	for($i=1;$i<47;$i++) {?><div class="letters" id="letter<?php echo $i; ?>"></div>
             <?php }?>
 
@@ -48,8 +48,8 @@
             <h2>A website on the anatomy of typography.</h2>
             <hr>
             <ul>
-            
-            <?php 
+
+            <?php
             $letters = array("Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender Height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body Width", "Bowl", "Bracket", "Cap Height", "Character Width", "Counter (Open)", "Counter (Closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/ Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex");
 	        $num = 1;
             foreach ($letters as $letter) : ?>
