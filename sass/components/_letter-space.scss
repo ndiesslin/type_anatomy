@@ -1,18 +1,19 @@
 @import "_variables";
 
 #letter-space {
-    width: 65%;
-    height: 100%;
-    float: left;
-    background: url(../img/back.svg) repeat-x center; 
-    background-size: contain;
-    background-color: $white;  
-    .letters {
-		display: none;
-		width: 100%;
-		height: 100%;
-		background-size: contain;
-	}
+  width: 65%;
+  height: 100%;
+  float: left;
+  background: url(../img/back.svg) repeat-x center;
+  background-size: contain;
+  background-color: $white;
+}
+
+.letters {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
 }
 
 $imagePath: "url(../img/letters/letter-";
