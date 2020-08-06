@@ -15,7 +15,7 @@ var quizJSON = {
     "info": {
         "name":    "Type Quiz",
         "main":    "<p>Think you understand the type anatomy?</p>",
-        "results": "<h5>Want to learn more?</h5><p>go to <a href=\"http://diesslin.tk/type_anatomy/\">Type Anatomy</a>, to learn all the terms on the type anatomy.</p>",
+        "results": "<h5>Want to learn more?</h5><p>go to <a href=\"https://typeanatomy.tk\">Type Anatomy</a>, to learn all the terms on the type anatomy.</p>",
         "level1":  "You are a master of the craft!",
         "level2":  "You know your typography pretty well, but keep trying.",
         "level3":  "You should probably learn your typography a little more...",
