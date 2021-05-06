@@ -23,6 +23,6 @@
 
 $imagePath: "url(../img/letters/letter-";
 $end: ".svg)";
-@for $i from 1 through 46 {
+@for $i from 1 through 47 {
   #letter#{$i} { background: #{$imagePath}#{$i}#{$end} no-repeat center center; }
 }

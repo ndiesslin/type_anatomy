@@ -26,7 +26,7 @@ var termPrinter = (function() {
 	// Build letter object to print
 	var printLetters = function() {
 		var letter;
-		for (letter = 1; letter < 47; letter++) {
+		for (letter = 1; letter < 48; letter++) {
 			htmlObject += '<div class="letters" id="letter' + letter + '"></div>';
 		};
 
@@ -35,7 +35,7 @@ var termPrinter = (function() {
 
 	// Build term object to print
   var printTerms = function() {
-		var terms = ["Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender Height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body Width", "Bowl", "Bracket", "Cap Height", "Character Width", "Counter (Open)", "Counter (Closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/ Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex"];
+		var terms = ["Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender Height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body Width", "Bowl", "Bracket", "Cap Height", "Character Width", "Counter (Open)", "Counter (Closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/ Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex", "X-Height"];
 		var term;
 		for (term = 0; term < terms.length; term++) {
 			htmlObject += '<li><a class="nav_click" onclick="showletter(\'letter' + (term + 1) + '\')">' + terms[term] + '</a></li>';
