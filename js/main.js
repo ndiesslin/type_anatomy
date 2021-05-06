@@ -37,8 +37,8 @@ var termPrinter = (function() {
   var printTerms = function() {
 		var terms = ["Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender Height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body Width", "Bowl", "Bracket", "Cap Height", "Character Width", "Counter (Open)", "Counter (Closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/ Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex"];
 		var term;
-		for (term = 1; term < terms.length; term++) {
-			htmlObject += '<li><a class="nav_click" onclick="showletter(\'letter' + term + '\')">' + terms[term] + '</a></li>';
+		for (term = 0; term < terms.length; term++) {
+			htmlObject += '<li><a class="nav_click" onclick="showletter(\'letter' + (term + 1) + '\')">' + terms[term] + '</a></li>';
 		};
 
 		appendObjectToElement('#definition-list', htmlObject);
