@@ -1,0 +1,15 @@
+{
+  "name": "type_anatomy",
+  "version": "1.0.0",
+  "description": "Compiler for type anatomy.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch sass:stylesheets & sass --watch type_quiz/sass:type_quiz/stylesheets",
+    "build": "sass --no-source-map --style compressed sass:stylesheets & sass --no-source-map --style compressed type_quiz/sass:type_quiz/stylesheets"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}

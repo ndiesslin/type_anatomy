@@ -1,4 +1,5 @@
 type_anatomy
 ============
-- Install compass `gem install compass`
-- Watch scss for changes `compass watch`
+- Install node packages ``npm install``.
+- Run watch ``npm run watch``.
+- Run build ``npm run build``.

@@ -1,5 +1,4 @@
 @import "_variables";
-@import "compass/";
 
 .answers {
 	padding:0;
@@ -36,9 +35,9 @@ ul {
 		margin: 1rem 0;
 		cursor: pointer;
 		color: $white;
-		@include transition-property(all);
-		@include transition-duration(.2s);
-		@include transition-timing-function(ease-in);
+		transition-property: all;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-in;
 	}
 	input[type=radio]:checked + label {
 		display: inline-block;

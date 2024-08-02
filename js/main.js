@@ -1,54 +1,52 @@
-function showletter(letterchosen) {
-	$('.letters').each(function(index) {
-	  if ($(this).attr("id") == letterchosen) {
-			$(this).fadeIn(600);
-			$("#letter-space").css("position", "fixed");
-			$("nav").css("position", "fixed");
-	  }
-	  else {
-			$(this).fadeOut(200);
-	  }
-	});
-	$('.nav_click').click(function(e){
-    $('.nav_click').css("border-bottom", "none");
-    $(this).css("border-bottom", "1px #00ccff solid");
-	});
+function showLetter(letterChosen) {
+  const letters = document.querySelectorAll('.letters');
+  const letterSpace = document.getElementById('letter-space');
+  const nav = document.querySelector('nav');
+  const navClicks = document.querySelectorAll('.nav_click');
+
+  letters.forEach(letter => {
+    if (letter.id === letterChosen) {
+      letter.style.display = 'block';
+      letterSpace.style.position = 'fixed';
+      nav.style.position = 'fixed';
+    } else {
+      letter.style.display = 'none';
+    }
+  });
+
+  navClicks.forEach(navClick => {
+    navClick.addEventListener('click', (e) => {
+      navClicks.forEach(navClick => navClick.style.borderBottom = 'none');
+      e.target.style.borderBottom = '1px solid #00ccff';
+    });
+  });
 }
 
-var termPrinter = (function() {
-  var htmlObject = '';
+function termPrinter() {
+  let htmlObject = '';
 
-	// Append our final object to element
-  var appendObjectToElement = function(elementName, object) {
-		document.querySelector(elementName).innerHTML = object;
-  }
-	
-	// Build letter object to print
-	var printLetters = function() {
-		var letter;
-		for (letter = 1; letter < 48; letter++) {
-			htmlObject += '<div class="letters" id="letter' + letter + '"></div>';
-		};
-
-		appendObjectToElement('.letter-list', htmlObject);
-	}
-
-	// Build term object to print
-  var printTerms = function() {
-		var terms = ["Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender Height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body Width", "Bowl", "Bracket", "Cap Height", "Character Width", "Counter (Open)", "Counter (Closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/ Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex", "X-Height"];
-		var term;
-		for (term = 0; term < terms.length; term++) {
-			htmlObject += '<li><a class="nav_click" onclick="showletter(\'letter' + (term + 1) + '\')">' + terms[term] + '</a></li>';
-		};
-
-		appendObjectToElement('#definition-list', htmlObject);
-	}
-
-  return {
-		printLetters: printLetters,
-		printTerms: printTerms
+  const appendObjectToElement = (elementName, object) => {
+    document.querySelector(elementName).innerHTML = object;
   };
-})();
 
-termPrinter.printLetters();
-termPrinter.printTerms();
+  const printLetters = () => {
+    for (let letter = 1; letter <= 47; letter++) {
+      htmlObject += `<div class="letters" id="letter${letter}"></div>`;
+    }
+    appendObjectToElement('.letter-list', htmlObject);
+  };
+
+  const printTerms = () => {
+    const terms = ["Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender Height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body Width", "Bowl", "Bracket", "Cap Height", "Character Width", "Counter (Open)", "Counter (Closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/ Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex", "X-Height"];
+
+    for (let term = 0; term < terms.length; term++) {
+      htmlObject += `<li><a class="nav_click" onclick="showLetter('letter${term + 1}')">${terms[term]}</a></li>`;
+    }
+    appendObjectToElement('#definition-list', htmlObject);
+  };
+
+  printLetters();
+  printTerms();
+}
+
+termPrinter();

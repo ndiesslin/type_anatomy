@@ -1,7 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
   <head>
     <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge'><![endif]-->
     <meta name="description" content="Type Anatomy is a website designed to help people understand and learn the anatomy of typography.">
     <meta name="keywords" content="type, anatomy, typography, typography quiz, design, web, nicholas, diesslin, nicholas diesslin">
     <meta name="author" content="Nicholas Diesslin">
@@ -16,11 +15,19 @@
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple.png">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple.png">
     <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
-    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700%7CCLibre+Baskerville' rel='stylesheet' type='text/css'>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W39L10CSYP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W39L10CSYP');
+  </script>
   <body>
-    <a class="letters nav_click" id="intro" onclick="showletter('letter1')">
+    <a class="letters nav_click" id="intro" onclick="showLetter('letter1')">
       <div id="logo"></div>
       <div id="continue-here"><em>Click anywhere to continue to site ...</em></div>
     </a>
@@ -41,16 +48,6 @@
       	</ul>
       </div>
     </nav>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/main.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-46191310-4', 'auto');
-      ga('send', 'pageview');
-    </script>
   </body>
 </html>

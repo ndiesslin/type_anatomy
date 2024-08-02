@@ -69,9 +69,9 @@ hr {
 				color: $white;
 				text-decoration: none;
 				border-bottom: 1px $blue solid;
-				@include transition-property(all);
-				@include transition-duration(.1s);
-				@include transition-timing-function(ease-in);
+				transition-property: all;
+				transition-duration: 0.1s;
+				transition-timing-function: ease-in;
 				&:hover {
 					color: darken($blue, 10%);
 				}
