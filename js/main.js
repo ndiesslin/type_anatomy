@@ -23,7 +23,7 @@ function showLetter(letterChosen) {
 }
 
 function termPrinter() {
-  let htmlObject = '';
+  let lettersHtmlObject = '';
 
   const appendObjectToElement = (elementName, object) => {
     document.querySelector(elementName).innerHTML = object;
@@ -31,18 +31,20 @@ function termPrinter() {
 
   const printLetters = () => {
     for (let letter = 1; letter <= 47; letter++) {
-      htmlObject += `<div class="letters" id="letter${letter}"></div>`;
+      lettersHtmlObject += `<div class="letters" id="letter${letter}"></div>`;
     }
-    appendObjectToElement('.letter-list', htmlObject);
+    appendObjectToElement('.letter-list', lettersHtmlObject);
   };
+
+	let definitionsHtmlObject = '';
 
   const printTerms = () => {
     const terms = ["Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender Height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body Width", "Bowl", "Bracket", "Cap Height", "Character Width", "Counter (Open)", "Counter (Closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/ Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex", "X-Height"];
 
     for (let term = 0; term < terms.length; term++) {
-      htmlObject += `<li><a class="nav_click" onclick="showLetter('letter${term + 1}')">${terms[term]}</a></li>`;
+      definitionsHtmlObject += `<li><a class="nav_click" onclick="showLetter('letter${term + 1}')">${terms[term]}</a></li>`;
     }
-    appendObjectToElement('#definition-list', htmlObject);
+    appendObjectToElement('#definition-list', definitionsHtmlObject);
   };
 
   printLetters();
