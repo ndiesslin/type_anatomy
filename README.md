@@ -1,7 +1,7 @@
 # Type Anatomy
 __A website designed to help people understand and learn the anatomy of typography.__
 
-[View the website here.](https://type-anatomy.web.app/)
+[View the website here.](https://letterparts.com)
 
 ![Demo image](demo.gif)
 
