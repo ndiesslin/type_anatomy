@@ -2,6 +2,7 @@
   @if $point == large {
     @media (min-width: 1366px) { @content ; }
   }
+  // Currently only medium is used.
   @else if $point == medium {
     @media (max-width: 768px) { @content ; }
   }

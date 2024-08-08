@@ -1,52 +1,103 @@
-@import "_variables";
-
-nav {
-	right: 0;
+.side-navigation {
   width: 35%;
   height: 100%;
   background: $black;
   float: right;
   overflow-y: scroll;
-  ul {
-		padding: 2em 0;
-		max-width: 500px;
-		margin: 0 auto;
-		overflow: auto;
-		li {
-			width: 30%;
-			float: left;
-			margin-right: 5%;
-			a {
-				line-height: 3em;
-				color: $white;
-				text-decoration: none;
-				transition-property: all;
-				transition-duration: 0.1s;
-				transition-timing-function: ease-in;
-				&:hover {
-					border-bottom: 1px $blue solid;
-				}
-			}
-			&:nth-child(3n+3) {
-				margin-right: 0;
-			}
-		}
-	}
-	#subnavigation {
-		height: 50px;
+
+	@include breakpoint(medium) {
 		width: 100%;
-		ul {
-			padding: 0;
-			li {
-				text-align: center;
-				width: 100%;
-				font-family: 'Libre Baskerville', serif;
-				font-size: 2em;
-				margin-right: 0;
-				a {
-					border-bottom: 1px $blue solid;
-				}
+		height: 40%;
+	}
+}
+
+.definition-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 5%;
+	grid-row-gap: .875vw;
+	width: 80%;
+	padding: 2rem 0;
+	margin: 0 auto;
+
+	@include breakpoint(medium) {
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	li {
+		a {
+			color: $white;
+			text-decoration: none;
+			&:hover {
+				border-bottom: 1px $blue solid;
 			}
 		}
+		&:nth-child(3n+3) {
+			margin-right: 0;
+		}
 	}
+}
+
+.sub-navigation {
+	width: 90%;
+	padding: 2rem 0;
+	margin: 0 auto;
+
+	ul {
+		margin: auto;
+	}
+
+	li {
+		text-align: center;
+		width: 100%;
+		font-family: 'Libre Baskerville', serif;
+		font-size: 2rem;
+		margin-right: 0;
+	}
+}
+
+.sub-navigation__link {
+	display: inline-block;
+	text-decoration: none;
+	color: $white;
+	border-bottom: 1px transparent solid;
+
+	&:hover {
+		color: $white;
+    cursor: pointer;
+    border-bottom: 1px $blue solid;
+	}
+
+	&:focus-visible {
+		color: $white;
+	}
+}
+
+.definition {
+	display: inline-block;
+	//margin: 0.46875rem 0;
+	//font-size: 0.667em;
+	font-size: .95vw;
+	color: $white;
+	text-decoration: none;
+	border-bottom: 1px transparent solid;
+
+	&:hover {
+		cursor: pointer;
+		border-color: $blue;
+	}
+
+	&.active {
+		border-color: $blue;
+	}
+
+	@include breakpoint(medium) {
+		font-size: 1rem;
+		margin: 0.75rem 0;
+	}
+}
+
+.anatomy-description,
+.anatomy-image {
+	display: none;
 }

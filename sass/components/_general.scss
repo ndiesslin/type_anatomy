@@ -1,22 +1,24 @@
-html, body {
+html, 
+body {
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  background-color: $white;
 }
 
-h1 {
-  color: $white;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 2.25em;
-  text-align: center;
-  padding: .5em;
-  margin: .5em 0;
+* {
+  margin: 0;
 }
 
-h2 {
-	display: none;
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus-visible {
+  outline: dashed 2px $red;
 }
 
 hr {
@@ -25,6 +27,10 @@ hr {
 	border-color: $white;
 }
 
-a {
-  cursor: pointer;
+.display-inline-block {
+  display: inline-block;
+}
+
+.background--white {
+  background: $white;
 }

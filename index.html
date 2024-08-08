@@ -15,7 +15,7 @@
     <link rel="shortcut icon" sizes="152x152" href="img/152.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple.png">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple.png">
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="stylesheets/screen.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700%7CCLibre+Baskerville' rel='stylesheet' type='text/css'>
   </head>
   <!-- Google tag (gtag.js) -->
@@ -28,27 +28,282 @@
     gtag('config', 'G-W39L10CSYP');
   </script>
   <body>
-    <a class="letters nav_click" id="intro" onclick="showLetter('letter1')">
-      <div id="logo"></div>
-      <div id="continue-here"><em>Click anywhere to continue to site ...</em></div>
-    </a>
-    <section id="letter-space">
-      <h2>Typography letters</h2>
-      <div class="letter-list"></div>
+    <section tabindex="0" class="intro" onclick="document.querySelector('.definition').click()" onkeypress="document.querySelector('.definition').click()">
+      <div class="logo"></div>
+      <span class="continue-here"><em>Click anywhere to continue to site ...</em></span>
     </section>
-    <nav>
+    <section class="letter-space">
+      <div class="letter-image"></div>
+      <section class="toggle-target show" data-toggle-name="notes">
+        <p class="anatomy-notes">
+        </p>
+      </section>
+      <section class="toggle-target background--white" data-toggle-name="information">
+        <div class="website-information">
+          <h2 class="margin-bottom--15 font-family-libre-baskerville">Type Anatomy-Information</h2>
+          <p class="margin-bottom--15">Master the art of typography by understanding its fundamental components. This interactive tool breaks down letters into their essential parts, explaining each element's role in creating visually appealing and effective text. Whether you're a seasoned designer or just starting out, this tool will enhance your typography knowledge.</p>
+          <p class="margin-bottom--15">This tool was created by <a href="https://ndiesslin.com" target="_blank">Nicholas Diesslin.</a></p>
+          <p>
+            <a href="https://github.com/ndiesslin/type_anatomy" target="_blank">Github repository.</a>
+          </p>
+        </div>
+      </section>
+    </section>
+    <main class="side-navigation">
       <h1>Type Anatomy</h1>
-      <h2>A website on the anatomy of typography.</h2>
       <hr>
-      <ul id="definition-list">
+      <ul class="definition-list">
+        <li>
+          <h3 tabindex="0" class="definition">Aperture</h3>
+          <p class="anatomy-description"><strong>Aperture:</strong> The opening of a letterform.</p>
+          <img class="anatomy-image" src="./img/letters/letter-1.svg" alt="Aperture example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Apex</h3>
+          <p class="anatomy-description"><strong>Apex:</strong> The highest point of a letterform; where two strokes meet.</p>
+          <img class="anatomy-image" src="./img/letters/letter-2.svg" alt="Apex example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Arc</h3>
+          <p class="anatomy-description"><strong>Arc:</strong> A curved portion of an letter form.</p>
+          <img class="anatomy-image" src="./img/letters/letter-3.svg" alt="Arc example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Arm</h3>
+          <p class="anatomy-description"><strong>Arm:</strong> A horizontal stroke extending from the stem of a letter.</p>
+          <img class="anatomy-image" src="./img/letters/letter-4.svg" alt="Arm example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Ascender</h3>
+          <p class="anatomy-description"><strong>Ascender:</strong> Part of a lowercase letter that extends above the x-height.</p>
+          <img class="anatomy-image" src="./img/letters/letter-5.svg" alt="Ascender example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Ascender Height</h3>
+          <p class="anatomy-description"><strong>Ascender Height:</strong> Distance between the x-height and the ascender line.</p>
+          <img class="anatomy-image" src="./img/letters/letter-7.svg" alt="Ascender Height example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Ascent Line</h3>
+          <p class="anatomy-description"><strong>Ascent Line:</strong> Imaginary line indicating the highest character height. This is typically past the cap height.</p>
+          <img class="anatomy-image" src="./img/letters/letter-8.svg" alt="Ascent Line example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Axis</h3>
+          <p class="anatomy-description"><strong>Axis:</strong> Imaginary line through the center of a letterform.</p>
+          <img class="anatomy-image" src="./img/letters/letter-9.svg" alt="Axis example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Baseline</h3>
+          <p class="anatomy-description"><strong>Baseline:</strong> Imaginary line on which characters rest.</p>
+          <img class="anatomy-image" src="./img/letters/letter-10.svg" alt="Base Line example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Beak</h3>
+          <p class="anatomy-description"><strong>Beak:</strong> Small, pointed serif at the end of a stroke.</p>
+          <img class="anatomy-image" src="./img/letters/letter-11.svg" alt="Beak example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Bilateral Serif</h3>
+          <p class="anatomy-description"><strong>Bilateral Serif:</strong> Serif with equal thickness on both sides.</p>
+          <img class="anatomy-image" src="./img/letters/letter-12.svg" alt="Bilateral Serif example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Body Width</h3>
+          <p class="anatomy-description"><strong>Body Width:</strong> Width of a single character.</p>
+          <img class="anatomy-image" src="./img/letters/letter-13.svg" alt="Body Width example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Bowl</h3>
+          <p class="anatomy-description"><strong>Bowl:</strong> Curved enclosure of a letter, like in 'o' or 'b'.</p>
+          <img class="anatomy-image" src="./img/letters/letter-14.svg" alt="Bowl example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Bracket</h3>
+          <p class="anatomy-description"><strong>Bracket:</strong> The curve connection on the stem and serif.</p>
+          <img class="anatomy-image" src="./img/letters/letter-15.svg" alt="Bracket example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Cap Height</h3>
+          <p class="anatomy-description"><strong>Cap Height:</strong> Height of uppercase letters.</p>
+          <img class="anatomy-image" src="./img/letters/letter-16.svg" alt="Cap Height example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Cap Line</h3>
+          <p class="anatomy-description"><strong>Cap Line:</strong> Imaginary line indicating the top of capital characters.</p>
+          <img class="anatomy-image" src="./img/letters/letter-6.svg" alt="Cap Line example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Character Width</h3>
+          <p class="anatomy-description"><strong>Character Width:</strong> Width of a single character, including spacing.</p>
+          <img class="anatomy-image" src="./img/letters/letter-17.svg" alt="Character Width example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Counter (Open)</h3>
+          <p class="anatomy-description"><strong>Counter (Open):</strong> White space enclosed by a letterform.</p>
+          <img class="anatomy-image" src="./img/letters/letter-18.svg" alt="Counter (Open) example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Counter (Closed)</h3>
+          <p class="anatomy-description"><strong>Counter (Closed):</strong> Enclosed space within a letter, like in 'b' or 'd'.</p>
+          <img class="anatomy-image" src="./img/letters/letter-19.svg" alt="Counter (Closed) example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Cross Stroke</h3>
+          <p class="anatomy-description"><strong>Cross Stroke:</strong> Horizontal stroke across a letter, like in 'A'.</p>
+          <img class="anatomy-image" src="./img/letters/letter-20.svg" alt="Cross Stroke example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Crotch</h3>
+          <p class="anatomy-description"><strong>Crotch:</strong> Junction of two strokes like 'y' and 'v'; typically it's on the bottom of the character.</p>
+          <img class="anatomy-image" src="./img/letters/letter-21.svg" alt="Crotch example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Descender</h3>
+          <p class="anatomy-description"><strong>Descender:</strong> Part of a lowercase letter extending below the baseline.</p>
+          <img class="anatomy-image" src="./img/letters/letter-22.svg" alt="Descender example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Descender Line</h3>
+          <p class="anatomy-description"><strong>Descender Line:</strong> Imaginary line indicating the bottom of descenders.</p>
+          <img class="anatomy-image" src="./img/letters/letter-23.svg" alt="Descender Line example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Diacritic</h3>
+          <p class="anatomy-description"><strong>Diacritic:</strong> Mark above or below a letter, like accents.</p>
+          <img class="anatomy-image" src="./img/letters/letter-24.svg" alt="Diacritic example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Ear</h3>
+          <p class="anatomy-description"><strong>Ear:</strong> Curved top part of a letter, like in 'g'.</p>
+          <img class="anatomy-image" src="./img/letters/letter-25.svg" alt="Ear example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Eye</h3>
+          <p class="anatomy-description"><strong>Eye:</strong> Central opening of a letter, like in 'e', 'o'.</p>
+          <img class="anatomy-image" src="./img/letters/letter-26.svg" alt="Eye example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Finial</h3>
+          <p class="anatomy-description"><strong>Finial</strong> Ending stroke of a letter, often curved.</p>
+          <img class="anatomy-image" src="./img/letters/letter-27.svg" alt="Finial example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Foot</h3>
+          <p class="anatomy-description"><strong>Foot:</strong> Lower part of a letter, often with a serif.</p>
+          <img class="anatomy-image" src="./img/letters/letter-28.svg" alt="Foot example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Hairline</h3>
+          <p class="anatomy-description"><strong>Hairline:</strong> Very thin stroke in a letterform.</p>
+          <img class="anatomy-image" src="./img/letters/letter-29.svg" alt="Hairline example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Head Serif</h3>
+          <p class="anatomy-description"><strong>Head Serif:</strong> Serif at the top of a vertical stroke.</p>
+          <img class="anatomy-image" src="./img/letters/letter-30.svg" alt="Head Serif example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Joint</h3>
+          <p class="anatomy-description"><strong>Joint:</strong> Connection between strokes and stems in a letterform.</p>
+          <img class="anatomy-image" src="./img/letters/letter-31.svg" alt="Joint example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Leg</h3>
+          <p class="anatomy-description"><strong>Leg:</strong> Descending stroke of a letter, like in 'k' or 'y'.</p>
+          <img class="anatomy-image" src="./img/letters/letter-32.svg" alt="Leg example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Ligature</h3>
+          <p class="anatomy-description"><strong>Ligature:</strong> Combination of two or more letters into a single glyph.</p>
+          <img class="anatomy-image" src="./img/letters/letter-33.svg" alt="Ligature example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Link/Neck</h3>
+          <p class="anatomy-description"><strong>Link/Neck:</strong> Connection between bowl and loop in a letter.</p>
+          <img class="anatomy-image" src="./img/letters/letter-34.svg" alt="Link/Neck example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Loop</h3>
+          <p class="anatomy-description"><strong>Loop:</strong> Open curved bottom in a double story letter like 'g'.</p>
+          <img class="anatomy-image" src="./img/letters/letter-35.svg" alt="Loop example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Overhang</h3>
+          <p class="anatomy-description"><strong>Overhang:</strong> Part of a stroke extending beyond the baseline.</p>
+          <img class="anatomy-image" src="./img/letters/letter-36.svg" alt="Overhang example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Serif</h3>
+          <p class="anatomy-description"><strong>Serif:</strong> Small projection at the end of a stroke.</p>
+          <img class="anatomy-image" src="./img/letters/letter-37.svg" alt="Serif example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Shoulder</h3>
+          <p class="anatomy-description"><strong>Shoulder:</strong> Curved part of a letter, like in 'h'.</p>
+          <img class="anatomy-image" src="./img/letters/letter-38.svg" alt="Shoulder example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Spine</h3>
+          <p class="anatomy-description"><strong>Spine:</strong> Main vertical stroke of a letter.</p>
+          <img class="anatomy-image" src="./img/letters/letter-39.svg" alt="Spine example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Spur</h3>
+          <p class="anatomy-description"><strong>Spur:</strong> Small projection at the end of a serif.</p>
+          <img class="anatomy-image" src="./img/letters/letter-40.svg" alt="Spur example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Stem</h3>
+          <p class="anatomy-description"><strong>Stem:</strong> Main vertical or horizontal stroke of a letter.</p>
+          <img class="anatomy-image" src="./img/letters/letter-41.svg" alt="Stem example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Stress</h3>
+          <p class="anatomy-description"><strong>Stress:</strong> Thicker part of a stroke.</p>
+          <img class="anatomy-image" src="./img/letters/letter-42.svg" alt="Stress example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Tail</h3>
+          <p class="anatomy-description"><strong>Tail:</strong> Descending stroke of a letter, like in 'g' or 'q'.</p>
+          <img class="anatomy-image" src="./img/letters/letter-43.svg" alt="Tail example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Tittle</h3>
+          <p class="anatomy-description"><strong>Tittle:</strong> Small dot above a letter, like in 'i' or 'j'.</p>
+          <img class="anatomy-image" src="./img/letters/letter-44.svg" alt="Tittle example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Terminal</h3>
+          <p class="anatomy-description"><strong>Terminal:</strong> Ending of a stroke in a letterform.</p>
+          <img class="anatomy-image" src="./img/letters/letter-45.svg" alt="Terminal example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">Vertex</h3>
+          <p class="anatomy-description"><strong>Vertex:</strong> The bottom point where two strokes meet.</p>
+          <img class="anatomy-image" src="./img/letters/letter-46.svg" alt="Vertex example">
+        </li>
+        <li>
+          <h3 tabindex="0" class="definition">X-Height</h3>
+          <p class="anatomy-description"><strong>X-Height:</strong> Height of lowercase letters without ascenders or descenders.</p>
+          <img class="anatomy-image" src="./img/letters/letter-47.svg" alt="X-Height example">
+        </li>
       </ul>
       <hr>
-      <div id="subnavigation">
-      	<ul>
-      		<li><a href="type_quiz/">Take the Quiz</a></li>
-      	</ul>
-      </div>
-    </nav>
-    <script src="js/main.js"></script>
+      <ul class="sub-navigation">
+        <li class="margin-bottom--15">
+          <h4 tabindex="0" class="sub-navigation__link toggle-button show" data-toggle-target="notes">Toggle Notes</h4>
+        </li>
+        <li class="margin-bottom--15">
+          <h4 tabindex="0" class="sub-navigation__link toggle-button" data-toggle-target="information">Toggle Website Information</h4>
+        </li>
+        <li>
+          <h4 class="display-inline-block">
+            <a href="type_quiz/" class="sub-navigation__link">Take the Quiz</a>
+          </h4>
+        </li>
+      </ul>
+    </main class="side-navigation">
+    <script defer src="js/main.min.js"></script>
   </body>
 </html>

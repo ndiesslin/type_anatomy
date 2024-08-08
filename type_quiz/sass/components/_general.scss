@@ -9,6 +9,14 @@ html, body {
   background: $black;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 #title {
 	z-index: 999;
 	display: table;
@@ -69,9 +77,6 @@ hr {
 				color: $white;
 				text-decoration: none;
 				border-bottom: 1px $blue solid;
-				transition-property: all;
-				transition-duration: 0.1s;
-				transition-timing-function: ease-in;
 				&:hover {
 					color: darken($blue, 10%);
 				}

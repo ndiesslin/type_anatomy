@@ -1,12 +1,21 @@
-#intro {
+.intro {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color: #282828;
+	background-color: $black;
   display: block;
+	z-index: 2;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:focus-visible {
+		border: dashed 2px $red;
+	}
 }
 
-#logo {
+.logo {
 	position: fixed;
 	width: 90%;
 	height: 40%;
@@ -18,9 +27,10 @@
 	display: block;
 }
 
-#continue-here {
+.continue-here {
 	position: absolute;
 	right: 1.5em;
 	bottom: 1em;
 	color: $white;
+	z-index: 2;
 }

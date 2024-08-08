@@ -1,54 +1,86 @@
-function showLetter(letterChosen) {
-  const letters = document.querySelectorAll('.letters');
-  const letterSpace = document.getElementById('letter-space');
-  const nav = document.querySelector('nav');
-  const navClicks = document.querySelectorAll('.nav_click');
+// Hide intro.
+const introElement = document.querySelector('.intro');
+function hideIntro() {
+  introElement.style.display = 'none';
+}
 
-  letters.forEach(letter => {
-    if (letter.id === letterChosen) {
-      letter.style.display = 'block';
-      letterSpace.style.position = 'fixed';
-      nav.style.position = 'fixed';
-    } else {
-      letter.style.display = 'none';
-    }
-  });
+// Memoization cache.
+const memoizedResults = {};
 
-  navClicks.forEach(navClick => {
-    navClick.addEventListener('click', (e) => {
-      navClicks.forEach(navClick => navClick.style.borderBottom = 'none');
-      e.target.style.borderBottom = '1px solid #00ccff';
+// Replace description with which anatomy is clicked.
+const anatomyNotesElement = document.querySelector('.anatomy-notes');
+function showDescription(description) {
+  // Check if the result is already cached
+  if (memoizedResults[description]) {
+    anatomyNotesElement.innerHTML = memoizedResults[description];
+    return;
+  }
+
+  // Compute the result and cache it.
+  const result = `<p>${description}</p>`;
+  memoizedResults[description] = result;
+  anatomyNotesElement.innerHTML = result;
+}
+
+// Replace image with which anatomy is clicked.
+const letterImageElement = document.querySelector('.letter-image');
+function showImage(src) {
+  // Check if the result is already cached
+  if (memoizedResults[src]) {
+    letterImageElement.style.backgroundImage = memoizedResults[src];
+    return;
+  }
+
+  // Compute the result and cache it.
+  const result = `url(${src})`;
+  memoizedResults[src] = result;
+  letterImageElement.style.backgroundImage = result;
+}
+
+const navClickElements = document.querySelectorAll('.definition');
+navClickElements.forEach(element => {
+  element.addEventListener('click', (event) => {
+    navClickElements.forEach(element => {
+      element.classList.remove('active');
     });
+    element.classList.add('active');
+
+    hideIntro();
+
+    // Set letter image.
+    let letterImage = element.parentElement.querySelector('img').src;
+    showImage(letterImage);
+
+    // Set description.
+    let description = element.parentElement.querySelector('.anatomy-description').innerHTML;
+    showDescription(description);
   });
-}
+});
 
-function termPrinter() {
-  let lettersHtmlObject = '';
+// Toggle button to toggle target.
+const toggleButtonElements = document.querySelectorAll('.toggle-button');
+toggleButtonElements.forEach(element => {
+  element.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default behavior for links
 
-  const appendObjectToElement = (elementName, object) => {
-    document.querySelector(elementName).innerHTML = object;
-  };
+    // Toggle show class on the clicked element.
+    event.target.classList.toggle('show');
 
-  const printLetters = () => {
-    for (let letter = 1; letter <= 47; letter++) {
-      lettersHtmlObject += `<div class="letters" id="letter${letter}"></div>`;
+    const targetName = event.target.dataset.toggleTarget;
+    const targetElement = document.querySelector(`[data-toggle-name="${targetName}"]`);
+
+    if (targetElement) {
+      targetElement.classList.toggle('show');
     }
-    appendObjectToElement('.letter-list', lettersHtmlObject);
-  };
+  });
+});
 
-	let definitionsHtmlObject = '';
-
-  const printTerms = () => {
-    const terms = ["Aperature", "Apex", "Arc", "Arm", "Ascender", "Ascender Line", "Ascender Height", "Ascent Line", "Axis", "Base Line", "Beak", "Bilateral Serif", "Body Width", "Bowl", "Bracket", "Cap Height", "Character Width", "Counter (Open)", "Counter (Closed)", "Cross Stroke", "Crotch", "Descender", "Decent Line", "Diacritic", "Ear", "Eye", "Finial", "Foot", "Hairline", "Head Serif", "Joint", "Leg", "Ligature", "Link/ Neck", "Loop", "Overhang","Serif", "Shoulder","Spine", "Spur", "Stem", "Stress", "Tail", "Tittle", "Terminal", "Vertex", "X-Height"];
-
-    for (let term = 0; term < terms.length; term++) {
-      definitionsHtmlObject += `<li><a class="nav_click" onclick="showLetter('letter${term + 1}')">${terms[term]}</a></li>`;
-    }
-    appendObjectToElement('#definition-list', definitionsHtmlObject);
-  };
-
-  printLetters();
-  printTerms();
-}
-
-termPrinter();
+// All enter clicks register as a mouse click.
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    console.log('Enter is clicked.', document.activeElement);
+    // Simulate a mouse click event
+    const clickEvent = new MouseEvent('click');
+    document.activeElement.dispatchEvent(clickEvent);
+  }
+});

@@ -35,9 +35,6 @@ ul {
 		margin: 1rem 0;
 		cursor: pointer;
 		color: $white;
-		transition-property: all;
-		transition-duration: 0.2s;
-		transition-timing-function: ease-in;
 	}
 	input[type=radio]:checked + label {
 		display: inline-block;

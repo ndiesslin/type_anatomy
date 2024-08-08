@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "watch": "sass --watch sass:stylesheets & sass --watch type_quiz/sass:type_quiz/stylesheets",
-    "build": "sass --no-source-map --style compressed sass:stylesheets & sass --no-source-map --style compressed type_quiz/sass:type_quiz/stylesheets"
+    "build": "sass --no-source-map --style compressed sass:stylesheets & sass --no-source-map --style compressed type_quiz/sass:type_quiz/stylesheets & minify js/main.js > js/main.min.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "minify": "^11.4.0",
     "sass": "^1.77.8"
   }
 }

@@ -1,16 +1,10 @@
-$main-font:    Helvetica, sans-serif;
-$primary-color: #080808;
-/*------ typography ------*/
-body, html {
-	font-size: 100%;
-	font-family: $main-font;
+body, 
+html {
+	font-family: $open-sans;
+	font-size: 16px;
+	line-height: 1.5;
 	line-height: initial;
-	color: $primary-color;
-}
-
-body {
-	background-color: #fbfbfb;
-	color: #030303;
+	color: $black;
 }
 
 b,
@@ -36,74 +30,43 @@ kbd {
 }
 
 h1 {
-	font-size: 3.375em;
+	color: $white;
+  font-family: $libre-baskerville;
+	font-size: 2.25rem;
+  text-align: center;
+  margin: 2rem 1rem;
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 2rem;
 }
 
 h3 {
-	font-size: 2.25em;
+	font-size: 1.5rem;
 }
 
 h4 {
-	font-size: 2em;
+	font-size: 1.333rem;
 }
 
 h5 {
-	font-size: 1.5em;
+	font-size: 1rem;
 }
 
 h6 {
-	font-size: 1.333em;
+	font-size: 0.899rem;
 }
 
-.h1 {
-	font-size: 3.375em;
+p {
+	font-size: 0.899rem;
 }
 
-.h2 {
-	font-size: 3em;
+a,
+a:hover,
+a:focus {
+  color: $red;
 }
 
-.h3 {
-	font-size: 2.25em;
-}
-
-.h4 {
-	font-size: 2em;
-}
-
-.h5 {
-	font-size: 1.5em;
-}
-
-.h6 {
-	font-size: 1.333em;
-}
-
-/*------ extra type sizes - part of modular type scale------*/
-.huge {
-	font-size: 4.5em;
-}
-
-.default-font {
-	font-size: 1em;
-}
-
-.larger {
-	font-size: 0.899em;
-}
-
-.large {
-	font-size: 0.667em;
-}
-
-.small {
-	font-size: 0.593em;
-}
-
-.smallest {
-	font-size: 0.444em;
+.font-family-libre-baskerville {
+	font-family: 'Libre Baskerville', serif;
 }

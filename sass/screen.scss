@@ -1,8 +1,12 @@
 @import "components/reset";
+@import "components/mixins";
 @import "components/variables";
-@import "components/typography";
 @import "components/general";
+@import "components/typography";
 @import "components/intro";
 @import "components/letter-space";
 @import "components/nav";
-@import "components/media-queries"; 
+@import "components/toggle";
+@import "components/anatomy-notes";
+@import "components/website-information";
+@import "components/spacing";
