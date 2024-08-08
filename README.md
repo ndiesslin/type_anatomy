@@ -3,6 +3,8 @@ __A website designed to help people understand and learn the anatomy of typograp
 
 [View the website here.](https://type-anatomy.web.app/)
 
+![Demo image](demo.gif)
+
 ## Run and build locally
 - Install node packages ``npm install``.
 - Run watch ``npm run watch``.
