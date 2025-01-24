@@ -1,3 +1,9 @@
 # robotstxt.org/
 
 User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /css/
+Disallow: /sass/
+
+Sitemap: https://letterparts.com/sitemap.xml
