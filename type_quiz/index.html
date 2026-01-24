@@ -1,66 +1,110 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Type Quiz</title>
-        <meta name="description" content="Type Quiz is a website designed to help people understand and learn the anatomy of typography, by testing your knowledge.">
-        <meta name="keywords" content="type, anatomy, typography, typography quiz, design, web, nicholas, diesslin, nicholas diesslin">
-        <meta name="author" content="Nicholas Diesslin">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-        <link rel="icon" href="img/favicon.png" type="image/x-icon">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-        <meta name="mobile-web-app-capable" content="yes">
-        <link rel="shortcut icon" sizes="196x196" href="img/196.png">
-        <link rel="shortcut icon" sizes="152x152" href="img/152.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/apple.png">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple.png">
-        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css"/>
-        <link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700%7CCLibre+Baskerville' rel='stylesheet' type='text/css'>
-    </head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W39L10CSYP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-W39L10CSYP');
-    </script>
-    <body id="slickQuiz">
+<head>
+    <meta charset="utf-8">
+    <title>Type Anatomy Quiz - Test Your Typography Knowledge</title>
+    <meta name="description"
+        content="Test your knowledge of typography anatomy with this interactive quiz. Learn about ascenders, descenders, serifs, and more terms used in type design.">
+    <meta name="keywords"
+        content="type, anatomy, typography, typography quiz, design, web, type anatomy, font parts, typography terms">
+    <meta name="author" content="Nicholas Diesslin">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div class="quizArea">
-            <h1 id="title"><span id="title-text">Type Quiz</span><hr></h1>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://type-anatomy.web.app/type_quiz/">
+    <meta property="og:title" content="Type Anatomy Quiz - Test Your Typography Knowledge">
+    <meta property="og:description" content="Test your knowledge of typography anatomy with this interactive quiz.">
+    <meta property="og:image" content="https://type-anatomy.web.app/type_quiz/img/apple.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://type-anatomy.web.app/type_quiz/">
+    <meta property="twitter:title" content="Type Anatomy Quiz - Test Your Typography Knowledge">
+    <meta property="twitter:description"
+        content="Test your knowledge of typography anatomy with this interactive quiz.">
+    <meta property="twitter:image" content="https://type-anatomy.web.app/type_quiz/img/apple.png">
+
+    <link rel="canonical" href="https://type-anatomy.web.app/type_quiz/" />
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Quiz",
+          "name": "Type Anatomy Quiz",
+          "description": "Test your knowledge of typography anatomy with this interactive quiz.",
+          "learningResourceType": "Assessment",
+          "educationalLevel": "Intermediate",
+          "author": {
+            "@type": "Person",
+            "name": "Nicholas Diesslin"
+          }
+        }
+        </script>
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="img/196.png">
+    <link rel="shortcut icon" sizes="152x152" href="img/152.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple.png">
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700%7CCLibre+Baskerville'
+        rel='stylesheet' type='text/css'>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W39L10CSYP"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-W39L10CSYP');
+</script>
+
+<body id="slickQuiz">
+
+    <div class="quizArea">
+        <header>
+            <h1 id="title"><span id="title-text">Type Quiz</span>
+                <hr>
+            </h1>
             <div id="mobile-logo"></div>
-            <div class="quizHeader">
-                <!-- where the quiz main copy goes -->
+        </header>
 
-                <a class="button startQuiz" href="#">Get Started!</a>
-            </div>
+        <main class="quizHeader">
+            <!-- where the quiz main copy goes -->
 
-            <!-- where the quiz gets built -->
+            <a class="button startQuiz" href="#">Get Started!</a>
+        </main>
+
+        <!-- where the quiz gets built -->
+    </div>
+
+    <div class="quizResults">
+        <h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
+
+        <h3 class="quizLevel"><strong>Ranking:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
+
+        <div class="quizResultsCopy">
+            <!-- where the quiz result copy goes -->
         </div>
+    </div>
 
-        <div class="quizResults">
-            <h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
+    <script src="js/jquery.js"></script>
+    <script src="js/slickQuiz-config.js"></script>
+    <script src="js/slickQuiz.js"></script>
+    <script src="js/master.js"></script>
 
-            <h3 class="quizLevel"><strong>Ranking:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
+    <!-- <div class="flex1-next flex2-next" id="next-button" href="">Next Question</div> -->
 
-            <div class="quizResultsCopy">
-                <!-- where the quiz result copy goes -->
-            </div>
-        </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+</body>
 
-        <script src="js/jquery.js"></script>
-        <script src="js/slickQuiz-config.js"></script>
-        <script src="js/slickQuiz.js"></script>
-        <script src="js/master.js"></script>
-
-	    <!-- <div class="flex1-next flex2-next" id="next-button" href="">Next Question</div> -->
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-    </body>
 </html>

@@ -1,6 +1,5 @@
 // Builder for enclosing letter div
-var letters = "<div class=\"letters\" id=\"letter";
-var lettersEnd = "\"></div>";
+
 
 // Answers for multiple choice
 var answers = [
@@ -24,7 +23,7 @@ var quizJSON = {
     },
     "questions": [
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": letters.concat('1').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-1.svg\" alt=\"Diagram highlighting the Aperature of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[0], "correct": true},
                 {"option": answers[10], "correct": false},
@@ -35,7 +34,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
-            "q": letters.concat('2').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-2.svg\" alt=\"Diagram highlighting the Apex of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[1], "correct": true},
                 {"option": answers[9], "correct": false},
@@ -46,7 +45,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 3 - Multiple Choice, Multiple True Answers, Select All
-            "q": letters.concat('3').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-3.svg\" alt=\"Diagram highlighting the Arc of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[2], "correct": true},
                 {"option": answers[4], "correct": false},
@@ -57,7 +56,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 4
-            "q": letters.concat('4').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-4.svg\" alt=\"Diagram highlighting the Arm of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[3], "correct": true},
                 {"option": answers[2], "correct": false},
@@ -68,7 +67,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 5
-            "q": letters.concat('5').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-5.svg\" alt=\"Diagram highlighting the Ascender of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[4], "correct": true},
                 {"option": answers[10], "correct": false},
@@ -79,7 +78,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 6
-            "q": letters.concat('6').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-6.svg\" alt=\"Diagram highlighting the Ascender Line of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[5], "correct": true},
                 {"option": answers[1], "correct": false},
@@ -90,7 +89,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 7
-            "q": letters.concat('7').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-7.svg\" alt=\"Diagram highlighting the Ascender Height of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[6], "correct": true},
                 {"option": answers[7], "correct": false},
@@ -101,7 +100,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 8
-            "q": letters.concat('8').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-8.svg\" alt=\"Diagram highlighting the Ascent Line of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[7], "correct": true},
                 {"option": answers[3], "correct": false},
@@ -112,7 +111,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 9
-            "q": letters.concat('9').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-9.svg\" alt=\"Diagram highlighting the Axis of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[8], "correct": true},
                 {"option": answers[2], "correct": false},
@@ -123,7 +122,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 10
-            "q": letters.concat('10').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-10.svg\" alt=\"Diagram highlighting the Base Line of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[9], "correct": true},
                 {"option": answers[43], "correct": false},
@@ -134,7 +133,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 11
-            "q": letters.concat('11').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-11.svg\" alt=\"Diagram highlighting the Beak of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[10], "correct": true},
                 {"option": answers[5], "correct": false},
@@ -145,7 +144,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 12
-            "q": letters.concat('12').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-12.svg\" alt=\"Diagram highlighting the Bilateral Serif of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[11], "correct": true},
                 {"option": answers[1], "correct": false},
@@ -156,7 +155,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 13
-            "q": letters.concat('13').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-13.svg\" alt=\"Diagram highlighting the Body Width of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[12], "correct": true},
                 {"option": answers[26], "correct": false},
@@ -167,7 +166,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 14
-            "q": letters.concat('14').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-14.svg\" alt=\"Diagram highlighting the Bowl of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[13], "correct": true},
                 {"option": answers[3], "correct": false},
@@ -178,7 +177,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 15
-            "q": letters.concat('15').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-15.svg\" alt=\"Diagram highlighting the Bracket of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[14], "correct": true},
                 {"option": answers[9], "correct": false},
@@ -189,7 +188,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 16
-            "q": letters.concat('16').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-16.svg\" alt=\"Diagram highlighting the Cap Height of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[15], "correct": true},
                 {"option": answers[5], "correct": false},
@@ -200,7 +199,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 17
-            "q": letters.concat('17').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-17.svg\" alt=\"Diagram highlighting the Character Width of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[16], "correct": true},
                 {"option": answers[2], "correct": false},
@@ -211,7 +210,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 18
-            "q": letters.concat('18').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-18.svg\" alt=\"Diagram highlighting the Counter (Open) of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[17], "correct": true},
                 {"option": answers[23], "correct": false},
@@ -222,7 +221,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 19
-            "q": letters.concat('19').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-19.svg\" alt=\"Diagram highlighting the Counter (Closed) of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[18], "correct": true},
                 {"option": answers[7], "correct": false},
@@ -233,7 +232,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 20
-            "q": letters.concat('20').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-20.svg\" alt=\"Diagram highlighting the Cross Stroke of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[19], "correct": true},
                 {"option": answers[8], "correct": false},
@@ -244,7 +243,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 21
-            "q": letters.concat('21').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-21.svg\" alt=\"Diagram highlighting the Crotch of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[20], "correct": true},
                 {"option": answers[13], "correct": false},
@@ -255,7 +254,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 22
-            "q": letters.concat('22').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-22.svg\" alt=\"Diagram highlighting the Descender of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[21], "correct": true},
                 {"option": answers[18], "correct": false},
@@ -266,7 +265,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 23
-            "q": letters.concat('23').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-23.svg\" alt=\"Diagram highlighting the Decent Line of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[22], "correct": true},
                 {"option": answers[9], "correct": false},
@@ -277,7 +276,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 24
-            "q": letters.concat('24').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-24.svg\" alt=\"Diagram highlighting the Diacritic of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[23], "correct": true},
                 {"option": answers[12], "correct": false},
@@ -288,7 +287,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 25
-            "q": letters.concat('25').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-25.svg\" alt=\"Diagram highlighting the Ear of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[24], "correct": true},
                 {"option": answers[15], "correct": false},
@@ -299,7 +298,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 26
-            "q": letters.concat('26').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-26.svg\" alt=\"Diagram highlighting the Eye of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[25], "correct": true},
                 {"option": answers[4], "correct": false},
@@ -310,7 +309,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 27
-            "q": letters.concat('27').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-27.svg\" alt=\"Diagram highlighting the Finial of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[26], "correct": true},
                 {"option": answers[6], "correct": false},
@@ -321,7 +320,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 28
-            "q": letters.concat('28').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-28.svg\" alt=\"Diagram highlighting the Foot of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[27], "correct": true},
                 {"option": answers[7], "correct": false},
@@ -332,7 +331,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 29
-            "q": letters.concat('29').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-29.svg\" alt=\"Diagram highlighting the Hairline of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[28], "correct": true},
                 {"option": answers[9], "correct": false},
@@ -343,7 +342,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 30
-            "q": letters.concat('30').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-30.svg\" alt=\"Diagram highlighting the Head Serif of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[29], "correct": true},
                 {"option": answers[13], "correct": false},
@@ -354,7 +353,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 31
-            "q": letters.concat('31').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-31.svg\" alt=\"Diagram highlighting the Joint of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[30], "correct": true},
                 {"option": answers[18], "correct": false},
@@ -365,7 +364,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 32
-            "q": letters.concat('32').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-32.svg\" alt=\"Diagram highlighting the Leg of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[31], "correct": true},
                 {"option": answers[27], "correct": false},
@@ -376,7 +375,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 33
-            "q": letters.concat('33').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-33.svg\" alt=\"Diagram highlighting the Ligature of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[32], "correct": true},
                 {"option": answers[26], "correct": false},
@@ -387,7 +386,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 34
-            "q": letters.concat('34').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-34.svg\" alt=\"Diagram highlighting the Link/Neck of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[33], "correct": true},
                 {"option": answers[28], "correct": false},
@@ -398,7 +397,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 35
-            "q": letters.concat('35').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-35.svg\" alt=\"Diagram highlighting the Loop of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[34], "correct": true},
                 {"option": answers[30], "correct": false},
@@ -409,7 +408,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 36
-            "q": letters.concat('36').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-36.svg\" alt=\"Diagram highlighting the Overhang of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[35], "correct": true},
                 {"option": answers[30], "correct": false},
@@ -420,7 +419,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 37
-            "q": letters.concat('37').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-37.svg\" alt=\"Diagram highlighting the Serif of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[36], "correct": true},
                 {"option": answers[23], "correct": false},
@@ -431,7 +430,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 38
-            "q": letters.concat('38').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-38.svg\" alt=\"Diagram highlighting the Shoulder of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[37], "correct": true},
                 {"option": answers[30], "correct": false},
@@ -442,7 +441,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 39
-            "q": letters.concat('39').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-39.svg\" alt=\"Diagram highlighting the Spine of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[38], "correct": true},
                 {"option": answers[32], "correct": false},
@@ -453,7 +452,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 40
-            "q": letters.concat('40').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-40.svg\" alt=\"Diagram highlighting the Spur of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[39], "correct": true},
                 {"option": answers[32], "correct": false},
@@ -464,7 +463,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 41
-            "q": letters.concat('41').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-41.svg\" alt=\"Diagram highlighting the Stem of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[40], "correct": true},
                 {"option": answers[22], "correct": false},
@@ -475,7 +474,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 42
-            "q": letters.concat('42').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-42.svg\" alt=\"Diagram highlighting the Stress of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[41], "correct": true},
                 {"option": answers[10], "correct": false},
@@ -486,7 +485,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 43
-            "q": letters.concat('43').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-43.svg\" alt=\"Diagram highlighting the Tail of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[42], "correct": true},
                 {"option": answers[5], "correct": false},
@@ -497,7 +496,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 44
-            "q": letters.concat('44').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-44.svg\" alt=\"Diagram highlighting the Tittle of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[43], "correct": true},
                 {"option": answers[40], "correct": false},
@@ -508,7 +507,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 45
-            "q": letters.concat('45').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-45.svg\" alt=\"Diagram highlighting the Terminal of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[44], "correct": true},
                 {"option": answers[15], "correct": false},
@@ -519,7 +518,7 @@ var quizJSON = {
             "incorrect": "<p>Uhh no.</p>" // no comma here
         },
         { // Question 46
-            "q": letters.concat('46').concat(lettersEnd),
+            "q": "<img src=\"img/letters/letter-46.svg\" alt=\"Diagram highlighting the Vertex of a typeface\" class=\"letters\">",
             "a": [
                 {"option": answers[45], "correct": true},
                 {"option": answers[20], "correct": false},

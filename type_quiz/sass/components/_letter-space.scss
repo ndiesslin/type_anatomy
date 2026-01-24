@@ -9,7 +9,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-size: contain;
+    object-fit: contain;
   }
 }
 
@@ -44,15 +44,6 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-size: contain;
-  }
-}
-
-$imagePath: "url(../img/letters/letter-";
-$end: ".svg)";
-
-@for $i from 1 through 46 {
-  #letter#{$i} {
-    background: #{$imagePath}#{$i}#{$end} no-repeat center center;
+    object-fit: contain;
   }
 }
