@@ -1,0 +1,100 @@
+// Shared Global Navigation Styles
+// Import this into each sub-project's main stylesheet
+
+$nav-bg: #fff;
+$nav-border: #ddd;
+$nav-text: #282828;
+$nav-accent: #00CCFF;
+
+.global-nav {
+    background: $nav-bg;
+    border-bottom: 1px solid $nav-border;
+    padding: 0 20px;
+    font-family: 'Open Sans', sans-serif; // Ensure font consistency
+    z-index: 1000;
+    position: relative;
+
+    .nav-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    .nav-logo {
+        text-decoration: none;
+        color: $nav-text;
+        font-weight: 700;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: $nav-accent;
+        }
+    }
+
+    .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+
+        li {
+            a {
+                text-decoration: none;
+                color: lighten($nav-text, 20%);
+                font-size: 0.9rem;
+                font-weight: 600;
+                transition: color 0.2s;
+                position: relative;
+
+                &:hover,
+                &.active {
+                    color: $nav-accent;
+                }
+
+                // Active indicator dot?
+                &.active::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -22px; // Position on border line
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: $nav-accent;
+                }
+            }
+        }
+    }
+
+    // Mobile Responsive
+    @media (max-width: 600px) {
+        height: auto;
+        padding: 10px 20px;
+
+        .nav-content {
+            flex-direction: column;
+            height: auto;
+            gap: 10px;
+        }
+
+        .nav-links {
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li a.active::after {
+                display: none;
+            }
+
+            li a.active {
+                color: $nav-accent;
+                border-bottom: 2px solid $nav-accent; // Simple border for mobile
+            }
+        }
+    }
+}

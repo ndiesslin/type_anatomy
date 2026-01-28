@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kerning Game - Type Anatomy</title>
+    <meta name="description" content="Master the art of spacing with the Type Anatomy Kerning Game.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700%7CLibre+Baskerville' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">Type Anatomy</a>
+            <ul class="nav-links">
+                <li><a href="../type_quiz/">Quiz</a></li>
+                <li><a href="../kerning_game/" class="active">Kerning</a></li>
+                <li><a href="../font_pairing/">Pairing</a></li>
+                <li><a href="../readability/">Readability</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div id="game-container">
+        <div id="stage">
+            <!-- Letters will be injected here -->
+        </div>
+
+        <div class="controls">
+            <button id="compare-btn">Compare</button>
+        </div>
+
+        <div id="results-area" style="display:none; text-align: center; margin-top: 20px;">
+            <h2 id="result-message"></h2>
+            <div class="score-final" style="font-size: 3rem; color: #e74c3c;"></div>
+            <button id="next-btn"
+                style="margin-top: 20px; padding: 10px 20px; font-size: 1rem; cursor: pointer; background: #222; color: #fff; border: none; border-radius: 4px;">Next
+                Word</button>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>

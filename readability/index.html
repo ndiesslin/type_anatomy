@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Science of Readability - Type Anatomy</title>
+    <meta name="description" content="Master the pillars of typographic readability: Leading, Tracking, and Measure.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">Type Anatomy</a>
+            <ul class="nav-links">
+                <li><a href="../type_quiz/">Quiz</a></li>
+                <li><a href="../kerning_game/">Kerning</a></li>
+                <li><a href="../font_pairing/">Pairing</a></li>
+                <li><a href="../readability/" class="active">Readability</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="readability-dashboard">
+
+        <!-- Controls Panel (Bottom/Side) -->
+        <aside id="controls">
+            <h2>Typesetting Dashboard</h2>
+            <p class="instruction">Adjust the sliders to fix the broken paragraph.</p>
+
+            <div class="control-group">
+                <label for="leading-range">
+                    Leading (Line Height)
+                </label>
+                <input type="range" id="leading-range" min="0.8" max="2.5" step="0.1" value="1.0">
+                <span class="value-display" id="leading-val">1.0</span>
+                <div class="feedback" id="leading-feedback"></div>
+            </div>
+
+            <div class="control-group">
+                <label for="tracking-range">
+                    Tracking (Letter Spacing)
+                </label>
+                <input type="range" id="tracking-range" min="-2" max="3" step="0.1" value="-1">
+                <span class="value-display" id="tracking-val">-1px</span>
+                <div class="feedback" id="tracking-feedback"></div>
+            </div>
+
+            <div class="control-group">
+                <label for="measure-range">
+                    Measure (Line Length)
+                </label>
+                <input type="range" id="measure-range" min="200" max="1000" step="10" value="900">
+                <span class="value-display" id="measure-val">900px</span>
+                <div class="feedback" id="measure-feedback"></div>
+            </div>
+
+            <div class="overall-status" id="overall-status">
+                Status: <strong>Needs Work</strong>
+            </div>
+        </aside>
+
+        <!-- Preview Panel -->
+        <main id="preview">
+            <div id="text-container">
+                <h1>The Rhythm of Reading</h1>
+
+                <p>Typography is music for the eyes. Good typography establishes a visual rhythm that allows the reader
+                    to absorb information effortlessly. When the rhythm is broken—by lines that are too long, spacing
+                    that is too tight, or leading that is too erratic—the reader fatigues quickly.</p>
+
+                <p>A well-set paragraph breathes. It invites the eye to travel smoothly from the end of one line to the
+                    beginning of the next. This journey is governed by three invisible forces: Leading, Tracking, and
+                    Measure.</p>
+
+                <p>Leading prevents lines from crashing into each other. Tracking ensures characters don't collide. And
+                    Measure ensures the eye doesn't get lost on the long return trip across the page. Master these
+                    three, and you master the craft of readability.</p>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

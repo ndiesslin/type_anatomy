@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Font Pairing Engine - Type Anatomy</title>
+    <meta name="description" content="Discover perfect font combinations with our interactive pairing engine.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">Type Anatomy</a>
+            <ul class="nav-links">
+                <li><a href="../type_quiz/">Quiz</a></li>
+                <li><a href="../kerning_game/">Kerning</a></li>
+                <li><a href="../font_pairing/" class="active">Pairing</a></li>
+                <li><a href="../readability/">Readability</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="engine-container">
+
+        <!-- Controls Panel -->
+        <aside id="controls">
+            <h2>Controls</h2>
+
+            <div class="control-group">
+                <label for="heading-font">Heading Font (Serif)</label>
+                <select id="heading-font">
+                    <option value="'Libre Baskerville', serif">Libre Baskerville</option>
+                    <option value="'Playfair Display', serif">Playfair Display</option>
+                    <option value="'Merriweather', serif">Merriweather</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="body-font">Body Font (Sans-Serif)</label>
+                <select id="body-font">
+                    <option value="'Open Sans', sans-serif">Open Sans</option>
+                    <option value="'Roboto', sans-serif">Roboto</option>
+                    <option value="'Lato', sans-serif">Lato</option>
+                    <option value="'Montserrat', sans-serif">Montserrat</option>
+                </select>
+            </div>
+
+            <div class="presets">
+                <h3>Quick Recipes</h3>
+                <button class="preset-btn" data-heading="'Playfair Display', serif"
+                    data-body="'Montserrat', sans-serif">Modern Chic</button>
+                <button class="preset-btn" data-heading="'Libre Baskerville', serif"
+                    data-body="'Open Sans', sans-serif">Classic</button>
+                <button class="preset-btn" data-heading="'Merriweather', serif"
+                    data-body="'Roboto', sans-serif">Editorial</button>
+            </div>
+        </aside>
+
+        <!-- Preview Panel -->
+        <main id="preview">
+            <article>
+                <h1 id="preview-heading">The Art of Typography</h1>
+                <p class="subtitle">Exploring the balance between form and function in digital design.</p>
+
+                <hr>
+
+                <p>Typography is more than just choosing a font. It's about establishing a visual hierarchy that guides
+                    the reader's eye. When we pair fonts effectively, we create a dialogue between the strong headlines
+                    and the readable body text.</p>
+
+                <blockquote>
+                    "Typography is the craft of endowing human language with a durable visual form."
+                </blockquote>
+
+                <h2>Why Contrast Matters</h2>
+                <p>High contrast pairings often work best. A strong, distinctive <span class="highlight">Serif
+                        header</span> grabs attention, while a clean, neutral <span class="highlight">Sans-Serif
+                        body</span> ensures long-form reading comfort.</p>
+
+                <p>Experiment with the controls on the left to see how different combinations change the "feel" of this
+                    article instantly.</p>
+            </article>
+        </main>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

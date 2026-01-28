@@ -1,0 +1,113 @@
+$white: #F4F4F4;
+$black: #282828;
+$primary: #00CCFF; // Blue from main site
+$accent: #FF6950; // Orange from main site
+$bg-gray: #f9f9f9;
+$font-stack: 'Open Sans', sans-serif;
+$serif-stack: 'Libre Baskerville', serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+    background: $white;
+    color: $black;
+    overflow: hidden;
+    /* Prevent scrolling during drag */
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    user-select: none;
+}
+
+@import '../../sass/partials/global-nav';
+
+#stage {
+    width: 90%;
+    max-width: 1200px;
+    height: 400px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; Removed to allow absolute positioning calculations to be easier relative to left */
+    overflow: hidden;
+}
+
+.letter {
+    position: absolute;
+    /* We will position them absolutely for dragging */
+    font-family: $serif-stack;
+    font-size: 120px;
+    cursor: grab;
+
+    // Ghost letter
+    &.solution {
+        color: rgba(46, 204, 113, 0.7) !important; // Green transparent - Force override
+        z-index: 20; // On top of user letters so they can see the difference
+        pointer-events: none;
+    }
+
+    user-select: none;
+
+    &.dragging {
+        cursor: grabbing;
+        opacity: 0.8;
+        z-index: 10;
+    }
+}
+
+.controls {
+    margin-top: 20px;
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        background: $black;
+        color: $white;
+        border: none;
+        border-radius: 4px;
+
+        &:hover {
+            background: $accent;
+            color: $white;
+        }
+
+        margin: 0 10px;
+    }
+}
+
+#feedback-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none; // Hidden by default
+    z-index: 100;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .score-final {
+        font-size: 4rem;
+        color: $primary;
+        margin-bottom: 30px;
+    }
+}
