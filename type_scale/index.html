@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Modular Type Scale Calculator - Type Anatomy</title>
+    <meta name="description"
+        content="Generate harmonious typography scales for your projects using modular ratios like Golden Ratio and Perfect Fourth.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7CLibre+Baskerville' rel='stylesheet'
+        type='text/css'>
+    <link rel="canonical" href="https://letterparts.com/type_scale/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://letterparts.com/type_scale/">
+    <meta property="og:title" content="Modular Type Scale Calculator - Type Anatomy">
+    <meta property="og:description"
+        content="Generate harmonious typography scales for your projects using modular ratios like Golden Ratio and Perfect Fourth.">
+    <meta property="og:image" content="https://letterparts.com/img/social-card-scale.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://letterparts.com/type_scale/">
+    <meta property="twitter:title" content="Modular Type Scale Calculator - Type Anatomy">
+    <meta property="twitter:description"
+        content="Generate harmonious typography scales for your projects using modular ratios like Golden Ratio and Perfect Fourth.">
+    <meta property="twitter:image" content="https://letterparts.com/img/social-card-scale.jpg">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">Type Anatomy</a>
+            <ul class="nav-links">
+                <li><a href="../type_quiz/">Quiz</a></li>
+                <li><a href="../kerning_game/">Kerning</a></li>
+                <li><a href="../font_pairing/">Pairing</a></li>
+                <li><a href="../readability/">Readability</a></li>
+                <li><a href="../type_scale/" class="active">Type Scale</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="scale-container">
+        <!-- Controls Panel -->
+        <aside id="controls">
+            <h2>Scale Controls</h2>
+
+            <div class="control-group">
+                <label for="base-size">Base Size (px)</label>
+                <input type="number" id="base-size" value="16" min="10" max="32">
+            </div>
+
+            <div class="control-group">
+                <label for="ratio-select">Ratio</label>
+                <select id="ratio-select">
+                    <option value="1.067">1.067 - Minor Second</option>
+                    <option value="1.125">1.125 - Major Second</option>
+                    <option value="1.200">1.200 - Minor Third</option>
+                    <option value="1.250" selected>1.250 - Major Third</option>
+                    <option value="1.333">1.333 - Perfect Fourth</option>
+                    <option value="1.414">1.414 - Augmented Fourth</option>
+                    <option value="1.500">1.500 - Perfect Fifth</option>
+                    <option value="1.618">1.618 - Golden Ratio</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <button id="copy-css-btn" class="action-btn">Copy CSS</button>
+            </div>
+
+            <div id="css-output" class="code-block" style="display:none;">
+                <pre><code id="css-code"></code></pre>
+            </div>
+
+            <div id="ratio-info" class="info-box">
+                <p id="ratio-desc"></p>
+            </div>
+        </aside>
+
+        <!-- Preview Panel -->
+        <main id="preview">
+            <div class="scale-visualizer">
+                <!-- Javascript will inject scale steps here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
