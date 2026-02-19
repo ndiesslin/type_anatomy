@@ -4,8 +4,8 @@
   "description": "Compiler for type anatomy.",
   "main": "index.js",
   "scripts": {
-    "watch": "sass --watch sass:stylesheets & sass --watch type_quiz/sass:type_quiz/stylesheets & sass --watch kerning_game/sass:kerning_game/stylesheets & sass --watch font_pairing/sass:font_pairing/stylesheets & sass --watch readability/sass:readability/stylesheets & sass --watch type_scale/sass:type_scale/stylesheets",
-    "build": "sass --no-source-map --style compressed sass:stylesheets & sass --no-source-map --style compressed type_quiz/sass:type_quiz/stylesheets & sass --no-source-map --style compressed kerning_game/sass:kerning_game/stylesheets & sass --no-source-map --style compressed font_pairing/sass:font_pairing/stylesheets & sass --no-source-map --style compressed readability/sass:readability/stylesheets & sass --no-source-map --style compressed type_scale/sass:type_scale/stylesheets & minify js/main.js > js/main.min.js"
+    "watch": "sass --watch sass:stylesheets & sass --watch type_quiz/sass:type_quiz/stylesheets & sass --watch kerning_game/sass:kerning_game/stylesheets & sass --watch font_pairing/sass:font_pairing/stylesheets & sass --watch readability/sass:readability/stylesheets & sass --watch type_scale/sass:type_scale/stylesheets & sass --watch type_classifications/sass:type_classifications/stylesheets",
+    "build": "sass --no-source-map --style compressed sass:stylesheets & sass --no-source-map --style compressed type_quiz/sass:type_quiz/stylesheets & sass --no-source-map --style compressed kerning_game/sass:kerning_game/stylesheets & sass --no-source-map --style compressed font_pairing/sass:font_pairing/stylesheets & sass --no-source-map --style compressed readability/sass:readability/stylesheets & sass --no-source-map --style compressed type_scale/sass:type_scale/stylesheets & sass --no-source-map --style compressed type_classifications/sass:type_classifications/stylesheets & minify js/main.js > js/main.min.js"
   },
   "author": "",
   "license": "ISC",

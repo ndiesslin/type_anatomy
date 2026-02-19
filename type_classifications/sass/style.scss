@@ -1,0 +1,288 @@
+@import '../../sass/partials/global-nav';
+
+// === Variables (unified palette) ===
+$white: #F4F4F4;
+$black: #282828;
+$primary: #00CCFF;
+$accent: #FF6950;
+$bg-gray: #f9f9f9;
+$border-color: #ddd;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $bg-gray;
+    color: $black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+// === Page Header ===
+.page-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 30px 20px;
+    text-align: center;
+
+    h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: $black;
+        margin: 0 0 10px;
+    }
+
+    .subtitle {
+        font-size: 1.05rem;
+        color: lighten($black, 30%);
+        max-width: 640px;
+        margin: 0 auto 30px;
+        line-height: 1.6;
+    }
+}
+
+// === Try It Bar ===
+.try-it-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+
+    label {
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: lighten($black, 20%);
+    }
+
+    input[type="text"] {
+        width: 100%;
+        max-width: 440px;
+        padding: 10px 14px;
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-family: inherit;
+        background: #fff;
+        transition: border-color 0.2s;
+
+        &:focus {
+            outline: none;
+            border-color: $primary;
+            box-shadow: 0 0 0 3px rgba($primary, 0.12);
+        }
+    }
+}
+
+// === Filter Tabs ===
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border: 1px solid $border-color;
+    border-radius: 20px;
+    background: #fff;
+    color: lighten($black, 20%);
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        border-color: $primary;
+        color: $primary;
+    }
+
+    &.active {
+        background: $primary;
+        border-color: $primary;
+        color: #fff;
+    }
+}
+
+// === Card Grid ===
+.card-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 30px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+// === Classification Card ===
+.classification-card {
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    padding: 28px;
+    transition: box-shadow 0.25s, transform 0.25s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+    &:hover {
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+        transform: translateY(-2px);
+    }
+
+    .card-header {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin: 0;
+            color: $black;
+        }
+    }
+
+    .card-tag {
+        display: inline-block;
+        padding: 3px 10px;
+        border-radius: 12px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        background: lighten($primary, 38%);
+        color: darken($primary, 15%);
+        flex-shrink: 0;
+    }
+
+    .card-desc {
+        font-size: 0.92rem;
+        line-height: 1.6;
+        color: lighten($black, 25%);
+        margin: 0 0 18px;
+    }
+
+    // Font samples
+    .card-samples {
+        border-top: 1px solid lighten($border-color, 5%);
+        padding-top: 16px;
+    }
+
+    .sample-font {
+        margin-bottom: 16px;
+
+        .font-name {
+            display: block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: $accent;
+            margin-bottom: 6px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .sample-text {
+            font-size: 1.25rem;
+            line-height: 1.5;
+            margin: 0;
+            color: $black;
+            word-break: break-word;
+        }
+    }
+
+    // Expandable details
+    .card-details {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.3s ease;
+        padding-top: 0;
+
+        h3 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: $primary;
+            margin: 16px 0 8px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: lighten($black, 20%);
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: lighten($black, 20%);
+            margin: 0;
+        }
+    }
+
+    &.expanded {
+        .card-details {
+            max-height: 400px;
+            padding-top: 16px;
+            border-top: 1px dashed $border-color;
+        }
+
+        .card-header h2 {
+            color: $primary;
+        }
+    }
+}
+
+// === Fade-in Animation ===
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+// === Responsive ===
+@media (max-width: 600px) {
+    .page-header {
+        padding: 30px 20px 15px;
+
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        padding: 15px 15px 40px;
+    }
+
+    .try-it-bar {
+        flex-direction: column;
+
+        input[type="text"] {
+            max-width: 100%;
+        }
+    }
+}
